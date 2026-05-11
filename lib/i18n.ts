@@ -3,7 +3,7 @@ export type Lang = 'en' | 'zh'
 const I18N = {
   en: {
     navAbout: 'About', navPrograms: 'Programs', navSchedule: 'Schedule', navAccess: 'Access', navFaq: 'FAQ',
-    bookTrial: 'Enquire', bookTrialSession: 'Send an Enquiry', viewPrograms: 'View Programs',
+    bookTrial: 'Book a Trial', bookTrialSession: 'Book a Trial Session', viewPrograms: 'View Programs',
     heroBadge: '🏓 Forest Hill, VIC · All Ages Welcome',
     heroTitle1: 'Learn.', heroTitle2: 'Play.', heroTitle3: 'Enjoy.', heroTitle4: 'Improve.',
     heroSub: 'Structured coaching for all ages and levels — from first-timers to competitive players. Small groups. Big progress.',
@@ -76,7 +76,7 @@ const I18N = {
     aPhoto1Title: 'Our Building', aPhoto1Desc: 'End of car park, next to the oval. Through the entrance — first door on the right.',
     aPhoto2Title: 'Mahoneys Reserve — Satellite View', aPhoto2Desc: 'Two entry points: Mahoneys Rd car park (north) and Lee Ann St car park (south-east).',
     midTitle: 'Ready to spin?', midBody: 'No experience needed. No equipment needed. Just show up in comfortable shoes and have a hit.',
-    midCta: 'Send an Enquiry →',
+    midCta: 'Book My Trial Session →',
     fLabel: 'FAQ', fTitle: 'Questions? We\'ve Got Answers.',
     finLabel: 'Get in touch', finTitle1: 'Come and have a hit.', finTitle2: '',
     finBody: 'Call us, email us, or fill in the form — we\'ll get back to you fast.',
@@ -104,7 +104,7 @@ const I18N = {
     mDone: 'Done', mSuccessTitle: 'Enquiry Received!',
     mSuccessBody: "Thanks for getting in touch! We'll call or email you within 24 hours.",
     mSuccessCall: 'Questions? Call us on 0433 883 078',
-    stickyCta: '🏓 Enquire About a Trial',
+    stickyCta: '🏓 Book a Free Trial',
     mq: ['Structured Coaching', 'All Levels Welcome', 'Kids & Adults', 'Individual, 1-on-2 & Group Programs', 'Build Skills. Build Confidence.', 'Beginner Friendly', 'Fun That Keeps You Coming', 'Great Cardio', 'Sharpen Focus'],
     faqs: [
       { q: 'Do I need any prior experience to join?', a: 'Not at all! Individual and 1-on-2 sessions are available for all ages and skill levels — from absolute beginners to experienced players. Group sessions run on Saturdays and are designed specifically for kids. Wherever you\'re starting from, we\'ll meet you there.' },
@@ -118,7 +118,7 @@ const I18N = {
   },
   zh: {
     navAbout: '关于', navPrograms: '课程', navSchedule: '课表', navAccess: '交通', navFaq: '常见问题',
-    bookTrial: '立即咨询', bookTrialSession: '发送咨询', viewPrograms: '查看课程',
+    bookTrial: '预约试课', bookTrialSession: '预约体验课', viewPrograms: '查看课程',
     heroBadge: '🏓 Forest Hill,维州 · 欢迎所有年龄段',
     heroTitle1: '学习。', heroTitle2: '对打。', heroTitle3: '享受。', heroTitle4: '进步。',
     heroSub: '面向所有年龄和水平的系统化教学 — 从初学者到竞技选手。小班教学,进步明显。',
@@ -192,7 +192,7 @@ const I18N = {
     aPhoto1Title: '我们的场馆', aPhoto1Desc: '停车场尽头,紧邻球场。从入口进去 — 右手第一扇门。',
     aPhoto2Title: 'Mahoneys Reserve — 卫星图', aPhoto2Desc: '两个入口:Mahoneys Rd 停车场(北侧)与 Lee Ann St 停车场(东南侧)。',
     midTitle: '准备好开打了吗?', midBody: '无需经验,无需装备。穿上舒适的鞋子来打一局就好。',
-    midCta: '发送咨询 →',
+    midCta: '预约我的体验课 →',
     fLabel: '常见问题', fTitle: '有疑问?这里有答案。',
     finLabel: '联系我们', finTitle1: '来打一局吧。', finTitle2: '',
     finBody: '致电、邮件或填表 — 我们会第一时间回复。',
@@ -220,7 +220,7 @@ const I18N = {
     mDone: '完成', mSuccessTitle: '咨询已发送!',
     mSuccessBody: '感谢联系!我们会在 24 小时内致电或邮件与您跟进。',
     mSuccessCall: '有疑问?请致电 0433 883 078',
-    stickyCta: '🏓 咨询试课',
+    stickyCta: '🏓 预约免费试课',
     mq: ['系统化教学', '适合所有水平', '儿童与成人', '一对一、一对二与小组课', '提升技术与自信', '初学者友好', '越打越上瘾', '出色有氧', '专注力训练'],
     faqs: [
       { q: '需要有基础才能参加吗?', a: '完全不需要!一对一和一对二课程面向所有年龄和水平 — 从零基础到老球友。小组课在周六开设,专为儿童设计。无论起点在哪,我们都能配合你。' },
