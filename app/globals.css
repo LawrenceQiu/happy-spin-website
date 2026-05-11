@@ -110,7 +110,7 @@ a { text-decoration: none; color: inherit; }
    ============================================================ */
 .hero {
   min-height: calc(100vh - 68px);
-  background: linear-gradient(135deg, #ffffff 0%, #eaf1ff 50%, #d6eaf8 100%);
+  background: linear-gradient(135deg, var(--white) 55%, #ddeeff 100%);
   display: grid; grid-template-columns: 1fr 1fr; align-items: center;
   gap: 40px; padding: 60px 5vw 40px;
   position: relative; overflow: hidden;
@@ -261,7 +261,7 @@ a { text-decoration: none; color: inherit; }
 /* ============================================================
    COACHES
    ============================================================ */
-.coaches { padding: 80px 5vw; background: var(--card-bg); background-image: linear-gradient(180deg, #ffffff 0%, #eef3ff 100%); }
+.coaches { padding: 80px 5vw; background: var(--card-bg); }
 .coaches-inner { max-width: 1100px; margin: 0 auto; }
 .coaches-header { text-align: center; max-width: 720px; margin: 0 auto 44px; }
 .coaches-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 32px; align-items: stretch; }
@@ -327,7 +327,7 @@ a { text-decoration: none; color: inherit; }
 /* ============================================================
    ABOUT
    ============================================================ */
-.about { padding: 80px 5vw; background: linear-gradient(180deg, #e4ecff 0%, #f0f4ff 100%); }
+.about { padding: 80px 5vw; background: var(--section-alt); }
 .about-inner {
   max-width: 1100px; margin: 0 auto;
   display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;
@@ -344,7 +344,7 @@ a { text-decoration: none; color: inherit; }
 /* ============================================================
    TESTIMONIALS
    ============================================================ */
-.testimonials { padding: 80px 5vw; background: var(--card-bg); background-image: linear-gradient(180deg, #ffffff 0%, #eef3ff 100%); }
+.testimonials { padding: 80px 5vw; background: var(--card-bg); }
 .testimonials-inner { max-width: 1100px; margin: 0 auto; }
 .testimonials-header { text-align: center; margin-bottom: 48px; }
 .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
@@ -369,7 +369,7 @@ a { text-decoration: none; color: inherit; }
 /* ============================================================
    PROGRAMS
    ============================================================ */
-.programs { padding: 80px 5vw; background: linear-gradient(180deg, #e4ecff 0%, #f0f4ff 100%); }
+.programs { padding: 80px 5vw; background: var(--section-alt); }
 .programs-inner { max-width: 1100px; margin: 0 auto; }
 .programs-header { text-align: center; margin-bottom: 48px; }
 .programs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
@@ -409,7 +409,7 @@ a { text-decoration: none; color: inherit; }
 /* ============================================================
    HOW IT WORKS
    ============================================================ */
-.hiw { padding: 80px 5vw; background: linear-gradient(135deg, #1b3a8c 0%, #163074 60%, #0f2255 100%); }
+.hiw { padding: 80px 5vw; background: var(--navy); }
 .hiw-inner { max-width: 1000px; margin: 0 auto; text-align: center; }
 .hiw .section-title { color: white; }
 .hiw .section-body { color: rgba(255,255,255,.7); margin: 0 auto; }
@@ -442,7 +442,7 @@ a { text-decoration: none; color: inherit; }
 /* ============================================================
    SCHEDULE
    ============================================================ */
-.schedule { padding: 80px 5vw; background: var(--card-bg); background-image: linear-gradient(180deg, #ffffff 0%, #eef3ff 100%); }
+.schedule { padding: 80px 5vw; background: var(--card-bg); }
 .schedule-inner { max-width: 900px; margin: 0 auto; }
 .schedule-header { text-align: center; margin-bottom: 48px; }
 .schedule-table {
@@ -478,7 +478,7 @@ a { text-decoration: none; color: inherit; }
 /* ============================================================
    ACCESS & PARKING
    ============================================================ */
-.access { padding: 80px 5vw; background: var(--card-bg); background-image: linear-gradient(180deg, #ffffff 0%, #eef3ff 100%); }
+.access { padding: 80px 5vw; background: var(--card-bg); }
 .access-inner {
   max-width: 1100px; margin: 0 auto;
   display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;
@@ -526,7 +526,7 @@ a { text-decoration: none; color: inherit; }
    MID CTA
    ============================================================ */
 .mid-cta {
-  background: linear-gradient(135deg, #f07030 0%, #e8610a 40%, #b84508 100%);
+  background: linear-gradient(135deg, var(--orange) 0%, #c9520a 100%);
   padding: 80px 5vw; text-align: center;
 }
 .mid-cta h2 {
@@ -571,7 +571,7 @@ a { text-decoration: none; color: inherit; }
 /* ============================================================
    FINAL CTA
    ============================================================ */
-.final-cta { padding: 80px 5vw; background: linear-gradient(180deg, #e4ecff 0%, #f0f4ff 100%); text-align: center; }
+.final-cta { padding: 80px 5vw; background: var(--section-alt); text-align: center; }
 .final-cta h2 {
   font-family: var(--font-barlow-condensed), 'Barlow Condensed', sans-serif;
   font-size: clamp(40px, 6vw, 64px); font-weight: 900; color: var(--navy); margin-bottom: 16px;
