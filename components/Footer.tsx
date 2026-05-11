@@ -37,6 +37,7 @@ export default function Footer({ t, openModal }: FooterProps) {
           <ul>
             <li><a href="/HappySpinCodeOfConduct.pdf" target="_blank" rel="noopener noreferrer">{t.footCoc}</a></li>
             <li><a href="/HappySpinChildSafetyPolicy.pdf" target="_blank" rel="noopener noreferrer">{t.footCsp}</a></li>
+            <li><a href="/HappySpinPrivacyPolicy.pdf" target="_blank" rel="noopener noreferrer">{t.footPp}</a></li>
           </ul>
         </div>
 

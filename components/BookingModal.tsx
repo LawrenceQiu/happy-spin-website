@@ -29,9 +29,20 @@ export default function BookingModal({
 }: BookingModalProps) {
   const [submitting, setSubmitting] = useState(false)
   const [submitError, setSubmitError] = useState(false)
+  const [phoneError, setPhoneError] = useState(false)
+
+  function isValidPhone(phone: string) {
+    const digits = phone.replace(/[\s\-().+]/g, '')
+    return /^(0[2-9]\d{8}|61[2-9]\d{8})$/.test(digits)
+  }
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
+    if (!isValidPhone(formData.phone)) {
+      setPhoneError(true)
+      return
+    }
+    setPhoneError(false)
     setSubmitting(true)
     setSubmitError(false)
     try {
@@ -124,7 +135,8 @@ export default function BookingModal({
             {/* Phone */}
             <div className="form-group">
               <label>{t.mPhone}</label>
-              <input type="tel" placeholder={t.mPhonePh} required value={formData.phone} onChange={(e) => update('phone', e.target.value)} />
+              <input type="tel" placeholder={t.mPhonePh} required value={formData.phone} onChange={(e) => { update('phone', e.target.value); setPhoneError(false) }} />
+              {phoneError && <p style={{ color: '#dc2626', fontSize: '13px', marginTop: '4px' }}>Please enter a valid Australian phone number.</p>}
             </div>
 
             {/* Email */}

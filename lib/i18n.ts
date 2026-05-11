@@ -83,7 +83,7 @@ const I18N = {
     footTagline1: 'Spin Every Day, Be Happy!', footTagline2: 'Forest Hill, Victoria.',
     footPrograms: 'Programs', footPolicies: 'Policies', footContact: 'Contact',
     footInd: 'Individual Sessions', foot1on2: '1-on-2 Sessions', footGroup: 'Group Sessions (Kids & Teens)', footView: 'View Schedule', footHire: 'Table Hire',
-    footCoc: 'Code of Conduct ↗', footCsp: 'Child Safety Policy ↗',
+    footCoc: 'Code of Conduct ↗', footCsp: 'Child Safety Policy ↗', footPp: 'Privacy Policy ↗',
     footHere: 'Getting Here', footRights: '© 2025 Happy Spin Table Tennis Academy. All rights reserved.',
     footMade: 'Made with ❤️ in Australia',
     mTitle: 'Trial Session Enquiry', mSub: 'No commitment. No equipment needed. Just show up and have fun! 🏓',
@@ -199,7 +199,7 @@ const I18N = {
     footTagline1: '天天旋转,天天开心!', footTagline2: 'Forest Hill, Victoria.',
     footPrograms: '课程', footPolicies: '规章', footContact: '联系',
     footInd: '一对一课程', foot1on2: '一对二课程', footGroup: '小组课(儿童与青少年)', footView: '查看课表', footHire: 'Table Hire', // TODO: translate
-    footCoc: '行为准则 ↗', footCsp: '儿童安全政策 ↗',
+    footCoc: '行为准则 ↗', footCsp: '儿童安全政策 ↗', footPp: '隐私政策 ↗',
     footHere: '如何到达', footRights: '© 2025 Happy Spin 乐旋乒乓学院。版权所有。',
     footMade: '用 ❤️ 在澳大利亚制作',
     mTitle: '体验课咨询', mSub: '无需承诺。无需装备。来打就好!🏓',
