@@ -327,9 +327,14 @@ a { text-decoration: none; color: inherit; }
 /* ============================================================
    ABOUT
    ============================================================ */
-.about { padding: 80px 5vw; background: var(--section-alt); }
+.about { padding: 80px 5vw; background: var(--section-alt); position: relative; overflow: hidden; }
+.about::before {
+  content: ''; position: absolute; top: -80px; right: -80px;
+  width: 320px; height: 320px; border-radius: 50%;
+  background: oklch(0.88 0.07 250); z-index: 0;
+}
 .about-inner {
-  max-width: 1100px; margin: 0 auto;
+  max-width: 1100px; margin: 0 auto; position: relative; z-index: 1;
   display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;
 }
 .about-list { list-style: none; margin-top: 28px; display: flex; flex-direction: column; gap: 14px; }
@@ -344,8 +349,13 @@ a { text-decoration: none; color: inherit; }
 /* ============================================================
    TESTIMONIALS
    ============================================================ */
-.testimonials { padding: 80px 5vw; background: var(--card-bg); }
-.testimonials-inner { max-width: 1100px; margin: 0 auto; }
+.testimonials { padding: 80px 5vw; background: var(--card-bg); position: relative; overflow: hidden; }
+.testimonials::before {
+  content: ''; position: absolute; bottom: -80px; right: -80px;
+  width: 300px; height: 300px; border-radius: 50%;
+  background: oklch(0.94 0.05 40); z-index: 0;
+}
+.testimonials-inner { max-width: 1100px; margin: 0 auto; position: relative; z-index: 1; }
 .testimonials-header { text-align: center; margin-bottom: 48px; }
 .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .tcard {
@@ -571,7 +581,13 @@ a { text-decoration: none; color: inherit; }
 /* ============================================================
    FINAL CTA
    ============================================================ */
-.final-cta { padding: 80px 5vw; background: var(--section-alt); text-align: center; }
+.final-cta { padding: 80px 5vw; background: var(--section-alt); text-align: center; position: relative; overflow: hidden; }
+.final-cta::before {
+  content: ''; position: absolute; top: -60px; left: -60px;
+  width: 280px; height: 280px; border-radius: 50%;
+  background: oklch(0.88 0.07 250); z-index: 0;
+}
+.final-cta > * { position: relative; z-index: 1; }
 .final-cta h2 {
   font-family: var(--font-barlow-condensed), 'Barlow Condensed', sans-serif;
   font-size: clamp(40px, 6vw, 64px); font-weight: 900; color: var(--navy); margin-bottom: 16px;
