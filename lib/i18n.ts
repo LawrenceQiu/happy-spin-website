@@ -80,7 +80,7 @@ const I18N = {
     fLabel: 'FAQ', fTitle: 'Questions? We\'ve Got Answers.',
     finLabel: 'Get in touch', finTitle1: 'Come and have a hit.', finTitle2: '',
     finBody: 'Call us, email us, or fill in the form — we\'ll get back to you fast.',
-    footTagline1: 'Spin Every Day, Be Happy!', footTagline2: 'Australia\'s friendliest table tennis community.',
+    footTagline1: 'Spin Every Day, Be Happy!', footTagline2: 'Forest Hill, Victoria.',
     footPrograms: 'Programs', footPolicies: 'Policies', footContact: 'Contact',
     footInd: 'Individual Sessions', foot1on2: '1-on-2 Sessions', footGroup: 'Group Sessions (Kids & Teens)', footView: 'View Schedule', footHire: 'Table Hire',
     footCoc: 'Code of Conduct ↗', footCsp: 'Child Safety Policy ↗',
@@ -196,7 +196,7 @@ const I18N = {
     fLabel: '常见问题', fTitle: '有疑问?这里有答案。',
     finLabel: '联系我们', finTitle1: '来打一局吧。', finTitle2: '',
     finBody: '致电、邮件或填表 — 我们会第一时间回复。',
-    footTagline1: '天天旋转,天天开心!', footTagline2: '澳大利亚最友好的乒乓球社群。',
+    footTagline1: '天天旋转,天天开心!', footTagline2: 'Forest Hill, Victoria.',
     footPrograms: '课程', footPolicies: '规章', footContact: '联系',
     footInd: '一对一课程', foot1on2: '一对二课程', footGroup: '小组课(儿童与青少年)', footView: '查看课表', footHire: 'Table Hire', // TODO: translate
     footCoc: '行为准则 ↗', footCsp: '儿童安全政策 ↗',
