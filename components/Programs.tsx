@@ -76,6 +76,17 @@ export default function Programs({ t, openModal }: ProgramsProps) {
             <button className="pcard-cta" onClick={openModal}>{t.bookTrial}</button>
           </div>
         </div>
+
+        {/* Table Hire — below coaching grid */}
+        <div style={{ maxWidth: '1060px', margin: '20px auto 0', background: 'var(--card-bg)', borderRadius: '16px', border: '1px solid rgba(27,58,140,0.1)', padding: '28px 32px', display: 'flex', alignItems: 'center', gap: '24px', flexWrap: 'wrap' }}>
+          <div style={{ fontSize: '2.2rem', lineHeight: 1 }}>🏓</div>
+          <div style={{ flex: 1, minWidth: '200px' }}>
+            <div style={{ fontFamily: 'var(--font-barlow-condensed), Barlow Condensed, sans-serif', fontWeight: 800, fontSize: '1.25rem', color: 'var(--navy)', textTransform: 'uppercase', letterSpacing: '.04em' }}>{t.p4Title}</div>
+            <div style={{ fontSize: '0.85rem', color: 'var(--muted)', marginTop: '3px' }}>{t.p4Sub}</div>
+            <p style={{ margin: '10px 0 0', fontSize: '0.95rem', color: 'var(--dark)', lineHeight: 1.5 }}>{t.p4Desc}</p>
+          </div>
+          <a href="tel:0433883078" style={{ display: 'inline-block', background: 'var(--section-alt)', color: 'var(--navy)', fontFamily: 'var(--font-barlow-condensed), Barlow Condensed, sans-serif', fontWeight: 700, fontSize: '1rem', padding: '13px 24px', borderRadius: '10px', textDecoration: 'none', whiteSpace: 'nowrap', letterSpacing: '.02em' }}>{t.p4Cta}</a>
+        </div>
       </div>
     </section>
   )

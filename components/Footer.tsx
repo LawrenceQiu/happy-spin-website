@@ -27,6 +27,7 @@ export default function Footer({ t, openModal }: FooterProps) {
             <li><a href="#programs">{t.footInd}</a></li>
             <li><a href="#programs">{t.foot1on2}</a></li>
             <li><a href="#programs">{t.footGroup}</a></li>
+            <li><a href="#programs">{t.footHire}</a></li>
             <li><a href="#schedule">{t.footView}</a></li>
           </ul>
         </div>

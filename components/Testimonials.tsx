@@ -13,7 +13,7 @@ export default function Testimonials({ t }: { t: Translations }) {
         <div className="testimonials-header">
           <div className="section-label">{t.tLabel}</div>
           <h2 className="section-title">
-            {t.tTitle1}<br />{t.tTitle2}
+            {t.tTitle1}{t.tTitle2 ? <><br />{t.tTitle2}</> : null}
           </h2>
         </div>
         <div className="testimonials-grid">

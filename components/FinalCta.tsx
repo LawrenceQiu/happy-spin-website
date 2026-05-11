@@ -10,7 +10,7 @@ export default function FinalCta({ t, openModal }: FinalCtaProps) {
     <section className="final-cta">
       <div className="section-label">{t.finLabel}</div>
       <h2>
-        {t.finTitle1}<br />{t.finTitle2}
+        {t.finTitle1}{t.finTitle2 ? <><br />{t.finTitle2}</> : null}
       </h2>
       <p style={{ marginBottom: '8px' }}>{t.finBody}</p>
       <div className="contact-line">
