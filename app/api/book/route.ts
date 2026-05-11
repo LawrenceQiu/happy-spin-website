@@ -42,7 +42,7 @@ export async function POST(request: Request) {
       from: 'Happy Spin Bookings <onboarding@resend.dev>',
       to: 'happyspintt@gmail.com',
       replyTo: d.email,
-      subject: `New Trial Booking — ${d.name}`,
+      subject: `New Trial Enquiry — ${d.name}`,
       html,
     })
 
