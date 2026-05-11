@@ -9,6 +9,12 @@ const PROGRAMS: Record<string, string> = {
   'group-kids': 'Group Sessions (Kids – Saturdays)',
 }
 
+const LEVELS: Record<string, string> = {
+  beginner: 'Beginner',
+  intermediate: 'Intermediate',
+  advanced: 'Advanced',
+}
+
 export async function POST(request: Request) {
   try {
     const d = await request.json()
@@ -29,7 +35,7 @@ export async function POST(request: Request) {
       <tr><td style="padding:8px 0;color:#6B7280">Email</td><td style="padding:8px 0;font-weight:600">${d.email}</td></tr>
       <tr><td style="padding:8px 0;color:#6B7280">Program</td><td style="padding:8px 0;font-weight:600">${PROGRAMS[d.program] || d.program || '—'}</td></tr>
       <tr><td style="padding:8px 0;color:#6B7280">Age</td><td style="padding:8px 0;font-weight:600">${d.age || '—'}</td></tr>
-      <tr><td style="padding:8px 0;color:#6B7280">Skill level</td><td style="padding:8px 0;font-weight:600">${d.level || '—'}</td></tr>
+      <tr><td style="padding:8px 0;color:#6B7280">Skill level</td><td style="padding:8px 0;font-weight:600">${LEVELS[d.level] || d.level || '—'}</td></tr>
       ${d.message ? `<tr><td style="padding:8px 0;color:#6B7280;vertical-align:top">Notes</td><td style="padding:8px 0">${d.message}</td></tr>` : ''}
     </table>
   </td></tr>
