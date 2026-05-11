@@ -1,3 +1,5 @@
+'use client'
+import { useState } from 'react'
 import type { Translations } from '@/lib/i18n'
 
 interface FormData {
@@ -25,9 +27,26 @@ interface BookingModalProps {
 export default function BookingModal({
   t, open, onClose, formStep, setFormStep, formData, setFormData,
 }: BookingModalProps) {
-  function handleSubmit(e: React.FormEvent) {
+  const [submitting, setSubmitting] = useState(false)
+  const [submitError, setSubmitError] = useState(false)
+
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
-    setFormStep('success')
+    setSubmitting(true)
+    setSubmitError(false)
+    try {
+      const res = await fetch('/api/book', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      })
+      if (!res.ok) throw new Error('Failed')
+      setFormStep('success')
+    } catch {
+      setSubmitError(true)
+    } finally {
+      setSubmitting(false)
+    }
   }
 
   function update(field: keyof FormData, value: string) {
@@ -165,8 +184,13 @@ export default function BookingModal({
               <textarea placeholder={t.mElsePh} value={formData.message} onChange={(e) => update('message', e.target.value)} />
             </div>
 
-            <button type="submit" className="btn-primary" style={{ width: '100%', fontSize: '16px', padding: '16px' }}>
-              {t.mSubmit}
+            {submitError && (
+              <p style={{ color: '#dc2626', fontSize: '14px', textAlign: 'center', marginBottom: '8px' }}>
+                Something went wrong — please try again or call us on 0433 883 078.
+              </p>
+            )}
+            <button type="submit" className="btn-primary" style={{ width: '100%', fontSize: '16px', padding: '16px' }} disabled={submitting}>
+              {submitting ? 'Sending…' : t.mSubmit}
             </button>
             <p style={{ textAlign: 'center', fontSize: '13px', color: 'var(--muted)', marginTop: '12px' }}>
               {t.mOrCall}
