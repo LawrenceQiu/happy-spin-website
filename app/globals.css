@@ -261,7 +261,7 @@ a { text-decoration: none; color: inherit; }
 /* ============================================================
    COACHES
    ============================================================ */
-.coaches { padding: 80px 5vw; background: var(--card-bg); }
+.coaches { padding: 80px 5vw; background: var(--card-bg); background-image: radial-gradient(circle, rgba(27,58,140,0.06) 1px, transparent 1px); background-size: 28px 28px; }
 .coaches-inner { max-width: 1100px; margin: 0 auto; }
 .coaches-header { text-align: center; max-width: 720px; margin: 0 auto 44px; }
 .coaches-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 32px; align-items: stretch; }
@@ -327,7 +327,7 @@ a { text-decoration: none; color: inherit; }
 /* ============================================================
    ABOUT
    ============================================================ */
-.about { padding: 80px 5vw; background: var(--section-alt); }
+.about { padding: 80px 5vw; background: var(--section-alt); background-image: radial-gradient(ellipse 100% 55% at 50% 0%, rgba(75,163,211,0.18) 0%, transparent 70%); }
 .about-inner {
   max-width: 1100px; margin: 0 auto;
   display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;
@@ -344,7 +344,7 @@ a { text-decoration: none; color: inherit; }
 /* ============================================================
    TESTIMONIALS
    ============================================================ */
-.testimonials { padding: 80px 5vw; background: var(--card-bg); }
+.testimonials { padding: 80px 5vw; background: var(--card-bg); background-image: radial-gradient(circle, rgba(27,58,140,0.06) 1px, transparent 1px); background-size: 28px 28px; }
 .testimonials-inner { max-width: 1100px; margin: 0 auto; }
 .testimonials-header { text-align: center; margin-bottom: 48px; }
 .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
@@ -369,7 +369,7 @@ a { text-decoration: none; color: inherit; }
 /* ============================================================
    PROGRAMS
    ============================================================ */
-.programs { padding: 80px 5vw; background: var(--section-alt); }
+.programs { padding: 80px 5vw; background: var(--section-alt); background-image: radial-gradient(ellipse 100% 55% at 50% 0%, rgba(75,163,211,0.18) 0%, transparent 70%); }
 .programs-inner { max-width: 1100px; margin: 0 auto; }
 .programs-header { text-align: center; margin-bottom: 48px; }
 .programs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
@@ -409,7 +409,7 @@ a { text-decoration: none; color: inherit; }
 /* ============================================================
    HOW IT WORKS
    ============================================================ */
-.hiw { padding: 80px 5vw; background: var(--navy); }
+.hiw { padding: 80px 5vw; background: var(--navy); background-image: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(75,163,211,0.2) 0%, transparent 60%); }
 .hiw-inner { max-width: 1000px; margin: 0 auto; text-align: center; }
 .hiw .section-title { color: white; }
 .hiw .section-body { color: rgba(255,255,255,.7); margin: 0 auto; }
@@ -442,7 +442,7 @@ a { text-decoration: none; color: inherit; }
 /* ============================================================
    SCHEDULE
    ============================================================ */
-.schedule { padding: 80px 5vw; background: var(--card-bg); }
+.schedule { padding: 80px 5vw; background: var(--card-bg); background-image: radial-gradient(circle, rgba(27,58,140,0.06) 1px, transparent 1px); background-size: 28px 28px; }
 .schedule-inner { max-width: 900px; margin: 0 auto; }
 .schedule-header { text-align: center; margin-bottom: 48px; }
 .schedule-table {
@@ -478,7 +478,7 @@ a { text-decoration: none; color: inherit; }
 /* ============================================================
    ACCESS & PARKING
    ============================================================ */
-.access { padding: 80px 5vw; background: var(--card-bg); }
+.access { padding: 80px 5vw; background: var(--card-bg); background-image: radial-gradient(circle, rgba(27,58,140,0.06) 1px, transparent 1px); background-size: 28px 28px; }
 .access-inner {
   max-width: 1100px; margin: 0 auto;
   display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;
@@ -571,7 +571,7 @@ a { text-decoration: none; color: inherit; }
 /* ============================================================
    FINAL CTA
    ============================================================ */
-.final-cta { padding: 80px 5vw; background: var(--section-alt); text-align: center; }
+.final-cta { padding: 80px 5vw; background: var(--section-alt); background-image: radial-gradient(ellipse 100% 55% at 50% 0%, rgba(75,163,211,0.18) 0%, transparent 70%); text-align: center; }
 .final-cta h2 {
   font-family: var(--font-barlow-condensed), 'Barlow Condensed', sans-serif;
   font-size: clamp(40px, 6vw, 64px); font-weight: 900; color: var(--navy); margin-bottom: 16px;
