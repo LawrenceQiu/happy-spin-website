@@ -97,11 +97,11 @@ export default function Page() {
       <StatStrip t={t} />
       <TrustBar t={t} />
       <About t={t} openModal={openModal} openLightbox={openLightbox} />
-      <Coaches t={t} />
-      <Testimonials t={t} />
       <Programs t={t} openModal={openModal} />
       <HowItWorks t={t} />
       <Schedule t={t} openModal={openModal} />
+      <Coaches t={t} />
+      <Testimonials t={t} />
       <Access t={t} openLightbox={openLightbox} />
       <MidCta t={t} openModal={openModal} />
       <Faq t={t} faqOpen={faqOpen} setFaqOpen={setFaqOpen} />
