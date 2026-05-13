@@ -261,7 +261,7 @@ a { text-decoration: none; color: inherit; }
 /* ============================================================
    COACHES
    ============================================================ */
-.coaches { padding: 80px 5vw; background: var(--card-bg); }
+.coaches { padding: 80px 5vw; background: var(--section-alt); }
 .coaches-inner { max-width: 1100px; margin: 0 auto; }
 .coaches-header { text-align: center; max-width: 720px; margin: 0 auto 44px; }
 .coaches-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 32px; align-items: stretch; }
@@ -344,7 +344,7 @@ a { text-decoration: none; color: inherit; }
 /* ============================================================
    TESTIMONIALS
    ============================================================ */
-.testimonials { padding: 80px 5vw; background: var(--section-alt); }
+.testimonials { padding: 80px 5vw; background: var(--card-bg); }
 .testimonials-inner { max-width: 1100px; margin: 0 auto; }
 .testimonials-header { text-align: center; margin-bottom: 48px; }
 .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
@@ -443,7 +443,7 @@ a { text-decoration: none; color: inherit; }
 /* ============================================================
    SCHEDULE
    ============================================================ */
-.schedule { padding: 80px 5vw; background: var(--section-alt); }
+.schedule { padding: 80px 5vw; background: var(--card-bg); }
 .schedule-inner { max-width: 900px; margin: 0 auto; }
 .schedule-header { text-align: center; margin-bottom: 48px; }
 .schedule-table {
@@ -479,7 +479,7 @@ a { text-decoration: none; color: inherit; }
 /* ============================================================
    ACCESS & PARKING
    ============================================================ */
-.access { padding: 80px 5vw; background: var(--card-bg); }
+.access { padding: 80px 5vw; background: var(--section-alt); }
 .access-inner {
   max-width: 1100px; margin: 0 auto;
   display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;
