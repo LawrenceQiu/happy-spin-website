@@ -17,7 +17,7 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'Happy Spin Table Tennis Academy | Forest Hill Melbourne — Coaching for All Ages',
+  title: 'Happy Spin — Table Tennis Academy · Forest Hill, VIC',
   description: 'Structured table tennis coaching for all ages and levels in Forest Hill, Melbourne. Individual, 1-on-2 and group sessions. Book your free trial session today.',
   keywords: ['table tennis', 'coaching', 'Forest Hill', 'Melbourne', 'kids', 'adults', 'beginners', 'Happy Spin'],
   openGraph: {
