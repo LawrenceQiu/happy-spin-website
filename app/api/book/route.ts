@@ -45,7 +45,7 @@ export async function POST(request: Request) {
 </table>`
 
     await resend.emails.send({
-      from: 'Happy Spin Bookings <onboarding@resend.dev>',
+      from: 'Happy Spin Bookings <bookings@happyspin.com.au>',
       to: 'happyspintt@gmail.com',
       replyTo: d.email,
       subject: `New Trial Enquiry — ${d.name}`,
