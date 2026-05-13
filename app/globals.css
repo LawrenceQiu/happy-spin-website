@@ -403,37 +403,27 @@ a { text-decoration: none; color: inherit; }
 .programs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .pcard {
   background: white; border-radius: 20px; padding: 36px 28px;
-  border: 1.5px solid #E5E7EB; position: relative; overflow: hidden;
+  border: 2px solid transparent; position: relative; overflow: hidden;
   transition: all var(--transition); cursor: default;
   box-shadow: var(--shadow-card);
+  display: flex; flex-direction: column;
 }
-.pcard:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); border-color: #d0d5e0; }
-.pcard.featured {
-  border: 2.5px solid var(--orange);
-  box-shadow: 0 6px 32px rgba(232,97,10,.18);
-  transform: translateY(-4px);
-}
-.pcard.featured:hover { box-shadow: 0 16px 48px rgba(232,97,10,.25); transform: translateY(-8px); }
-.pcard-popular {
-  display: inline-flex; align-items: center; gap: 5px;
-  background: var(--orange); color: white;
-  font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
-  padding: 4px 12px; border-radius: 20px; margin-bottom: 12px;
-}
+.pcard:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
+.pcard.featured { border-color: var(--orange); box-shadow: 0 4px 24px rgba(232,97,10,.15); }
+.pcard.featured:hover { box-shadow: 0 16px 48px rgba(232,97,10,.2); }
 .pcard-badge {
   position: absolute; top: 20px; right: 20px;
-  background: var(--navy); color: white; font-size: 11px; font-weight: 700;
+  background: var(--orange); color: white; font-size: 11px; font-weight: 700;
   letter-spacing: .08em; text-transform: uppercase; padding: 4px 12px; border-radius: 20px;
 }
-.pcard.featured .pcard-badge { background: rgba(27,58,140,.15); color: var(--navy); top: 52px; }
-.pcard-icon { font-size: 40px; margin-bottom: 14px; }
+.pcard-icon { font-size: 40px; margin-bottom: 16px; }
 .pcard-title {
   font-family: var(--font-barlow-condensed), 'Barlow Condensed', sans-serif;
   font-size: 26px; font-weight: 900; color: var(--navy); text-transform: uppercase;
   margin-bottom: 6px; letter-spacing: -.01em;
 }
 .pcard-subtitle { font-size: 14px; color: var(--muted); margin-bottom: 20px; line-height: 1.5; }
-.pcard-features { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; }
+.pcard-features { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; flex: 1; }
 .pcard-features li { display: flex; align-items: flex-start; gap: 8px; font-size: 14px; color: var(--dark); line-height: 1.5; }
 .pcard-features li::before { content: '●'; color: var(--orange); font-size: 8px; flex-shrink: 0; margin-top: 5px; }
 .pcard-cta {
@@ -444,13 +434,9 @@ a { text-decoration: none; color: inherit; }
   font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
 }
 .pcard-cta:hover { background: var(--orange); transform: translateY(-1px); }
-.pcard.featured .pcard-cta { background: var(--orange); font-size: 15px; padding: 15px 24px; }
+.pcard.featured .pcard-cta { background: var(--orange); }
 .pcard.featured .pcard-cta:hover { background: #c9520a; }
-@media (max-width: 900px) {
-  .programs-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
-  .pcard.featured { transform: none; }
-  .pcard.featured:hover { transform: translateY(-5px); }
-}
+@media (max-width: 900px) { .programs-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; } }
 @media (max-width: 480px) { .programs-grid { max-width: 100%; } }
 
 /* ============================================================

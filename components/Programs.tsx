@@ -49,7 +49,6 @@ export default function Programs({ t, openModal }: ProgramsProps) {
 
           {/* Group Sessions — featured */}
           <div className="pcard featured">
-            <div className="pcard-popular">★ Most Popular</div>
             <div className="pcard-badge">{t.pKidsTeens}</div>
             <div className="pcard-icon">🧒</div>
             <div className="pcard-title">{t.p3Title}</div>
@@ -87,14 +86,16 @@ export default function Programs({ t, openModal }: ProgramsProps) {
         </div>
 
         {/* Table Hire — below coaching grid */}
-        <div style={{ maxWidth: '1060px', margin: '20px auto 0', background: 'var(--section-alt)', borderRadius: '16px', border: '1px solid rgba(27,58,140,0.1)', padding: '28px 32px', display: 'flex', alignItems: 'center', gap: '24px', flexWrap: 'wrap' }}>
-          <div style={{ fontSize: '2.2rem', lineHeight: 1 }}>🏓</div>
+        <div style={{ maxWidth: '1060px', margin: '20px auto 0', background: 'white', borderRadius: '20px', border: '2px solid transparent', boxShadow: 'inset 5px 0 0 var(--orange), var(--shadow-card)', padding: '28px 32px 28px 36px', display: 'flex', alignItems: 'center', gap: '24px', flexWrap: 'wrap' }}>
           <div style={{ flex: 1, minWidth: '200px' }}>
-            <div style={{ fontFamily: 'var(--font-barlow-condensed), Barlow Condensed, sans-serif', fontWeight: 800, fontSize: '1.25rem', color: 'var(--navy)', textTransform: 'uppercase', letterSpacing: '.04em' }}>{t.p4Title}</div>
-            <div style={{ fontSize: '0.85rem', color: 'var(--muted)', marginTop: '3px' }}>{t.p4Sub}</div>
-            <p style={{ margin: '10px 0 0', fontSize: '0.95rem', color: 'var(--dark)', lineHeight: 1.5 }}>{t.p4Desc}</p>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '4px' }}>
+              <span style={{ fontSize: '1.4rem', lineHeight: 1 }}>🏓</span>
+              <div style={{ fontFamily: 'var(--font-barlow-condensed), Barlow Condensed, sans-serif', fontWeight: 800, fontSize: '1.25rem', color: 'var(--navy)', textTransform: 'uppercase', letterSpacing: '.04em' }}>{t.p4Title}</div>
+              <span style={{ background: 'var(--section-alt)', color: 'var(--navy)', fontSize: '11px', fontWeight: 700, padding: '3px 10px', borderRadius: '20px', letterSpacing: '.06em', textTransform: 'uppercase' }}>{t.p4Sub}</span>
+            </div>
+            <p style={{ margin: '8px 0 0', fontSize: '0.95rem', color: 'var(--dark)', lineHeight: 1.5 }}>{t.p4Desc}</p>
           </div>
-          <a href="tel:0433883078" style={{ display: 'inline-block', background: 'var(--navy)', color: 'white', fontFamily: 'var(--font-barlow-condensed), Barlow Condensed, sans-serif', fontWeight: 700, fontSize: '1rem', padding: '13px 24px', borderRadius: '10px', textDecoration: 'none', whiteSpace: 'nowrap', letterSpacing: '.02em' }}>{t.p4Cta}</a>
+          <a href="tel:0433883078" style={{ display: 'inline-block', background: 'var(--navy)', color: 'white', fontFamily: 'var(--font-barlow-condensed), Barlow Condensed, sans-serif', fontWeight: 700, fontSize: '1rem', padding: '13px 24px', borderRadius: '50px', textDecoration: 'none', whiteSpace: 'nowrap', letterSpacing: '.02em' }}>{t.p4Cta}</a>
         </div>
       </div>
     </section>
