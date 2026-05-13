@@ -29,43 +29,43 @@ export default function Schedule({ t, openModal }: ScheduleProps) {
               <td><strong>{t.sMon}</strong></td>
               <td>4:30 PM – 6:30 PM</td>
               <td><span className="sched-tag beginner">{t.sIndOr}</span></td>
-              <td><span style={{ color: 'var(--navy)', fontWeight: 600 }}>{t.sSpots}</span></td>
+              <td><span className="spots-chip avail"><span className="spots-dot" />{t.sSpots}</span></td>
             </tr>
             <tr>
               <td><strong>{t.sTue}</strong></td>
               <td>4:00 PM – 6:00 PM</td>
               <td><span className="sched-tag beginner">{t.sIndOr}</span></td>
-              <td><span style={{ color: 'var(--navy)', fontWeight: 600 }}>{t.sSpots}</span></td>
+              <td><span className="spots-chip avail"><span className="spots-dot" />{t.sSpots}</span></td>
             </tr>
             <tr>
               <td><strong>{t.sThu}</strong></td>
               <td>4:30 PM – 6:30 PM</td>
               <td><span className="sched-tag beginner">{t.sIndOr}</span></td>
-              <td><span style={{ color: 'var(--navy)', fontWeight: 600 }}>{t.sSpots}</span></td>
+              <td><span className="spots-chip avail"><span className="spots-dot" />{t.sSpots}</span></td>
             </tr>
-            <tr>
+            <tr className="sat-row">
               <td><strong>{t.sSat}</strong></td>
               <td>1:00 PM – 7:00 PM</td>
               <td><span className="sched-tag beginner">{t.sIndOr}</span></td>
-              <td><span style={{ color: 'var(--navy)', fontWeight: 600 }}>{t.sSpots}</span></td>
+              <td><span className="spots-chip avail"><span className="spots-dot" />{t.sSpots}</span></td>
             </tr>
-            <tr>
+            <tr className="sat-row">
               <td><strong>{t.sSat}</strong></td>
               <td>2:00 PM – 3:30 PM</td>
               <td><span className="sched-tag kids">{t.sGroupKids}</span></td>
               <td>
-                <span className="spots-chip">
+                <span className="spots-chip limited">
                   <span className="spots-dot" />
                   {t.sLimited}
                 </span>
               </td>
             </tr>
-            <tr>
+            <tr className="sat-row">
               <td><strong>{t.sSat}</strong></td>
               <td>3:30 PM – 5:00 PM</td>
               <td><span className="sched-tag kids">{t.sGroupKids}</span></td>
               <td>
-                <span className="spots-chip">
+                <span className="spots-chip limited">
                   <span className="spots-dot" />
                   {t.sLimited}
                 </span>
