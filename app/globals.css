@@ -20,7 +20,7 @@
    BASE RESET
    ============================================================ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 body {
   font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
   background: var(--white);
@@ -348,6 +348,7 @@ a { text-decoration: none; color: inherit; }
 .testimonials-inner { max-width: 1100px; margin: 0 auto; }
 .testimonials-header { text-align: center; margin-bottom: 48px; }
 .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.testimonials-grid:has(.tcard:only-child) { grid-template-columns: 1fr; max-width: 680px; margin: 0 auto; }
 .tcard {
   background: var(--white); border-radius: 16px; padding: 28px 24px;
   border: 1.5px solid #E5E7EB; transition: box-shadow .2s;
