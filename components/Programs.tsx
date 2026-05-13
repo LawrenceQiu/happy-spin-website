@@ -12,6 +12,12 @@ export default function Programs({ t, openModal }: ProgramsProps) {
     </span>
   )
 
+  const ageLabel = {
+    fontFamily: 'var(--font-barlow-condensed), Barlow Condensed, sans-serif',
+    fontWeight: 800, fontSize: '13px', letterSpacing: '.1em',
+    textTransform: 'uppercase' as const, color: 'var(--navy)', marginBottom: '6px',
+  }
+
   return (
     <section className="programs" id="programs">
       <div className="programs-inner">
@@ -22,20 +28,40 @@ export default function Programs({ t, openModal }: ProgramsProps) {
         </div>
 
         <div className="programs-grid" style={{ maxWidth: '1060px', margin: '0 auto' }}>
-          {/* Individual — featured */}
-          <div className="pcard featured">
+
+          {/* Individual */}
+          <div className="pcard">
             <div className="pcard-badge">{t.pAllAges}</div>
             <div className="pcard-icon">🏓</div>
             <div className="pcard-title">{t.p1Title}</div>
             <div className="pcard-subtitle">{t.p1Sub}</div>
             <div style={{ marginBottom: '18px' }}>
-              <div style={{ fontFamily: 'var(--font-barlow-condensed), Barlow Condensed, sans-serif', fontWeight: 800, fontSize: '13px', letterSpacing: '.1em', textTransform: 'uppercase', color: 'var(--navy)', marginBottom: '6px' }}>{t.pAge}</div>
+              <div style={ageLabel}>{t.pAge}</div>
               <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
                 {[t.pKids, t.pTeens, t.pAdults].map(agePill)}
               </div>
             </div>
             <ul className="pcard-features">
               {[t.p1F1, t.p1F2, t.p1F3, t.p1F4, t.p1F5].map((f) => <li key={f}>{f}</li>)}
+            </ul>
+            <button className="pcard-cta" onClick={openModal}>{t.bookTrial}</button>
+          </div>
+
+          {/* Group Sessions — featured */}
+          <div className="pcard featured">
+            <div className="pcard-popular">★ Most Popular</div>
+            <div className="pcard-badge">{t.pKidsTeens}</div>
+            <div className="pcard-icon">🧒</div>
+            <div className="pcard-title">{t.p3Title}</div>
+            <div className="pcard-subtitle">{t.p3Sub}</div>
+            <div style={{ marginBottom: '18px' }}>
+              <div style={ageLabel}>{t.pAge}</div>
+              <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                {[t.pKids, t.pTeens].map(agePill)}
+              </div>
+            </div>
+            <ul className="pcard-features">
+              {[t.p3F1, t.p3F2, t.p3F3, t.p3F4, t.p3F5].map((f) => <li key={f}>{f}</li>)}
             </ul>
             <button className="pcard-cta" onClick={openModal}>{t.bookTrial}</button>
           </div>
@@ -47,7 +73,7 @@ export default function Programs({ t, openModal }: ProgramsProps) {
             <div className="pcard-title">{t.p2Title}</div>
             <div className="pcard-subtitle">{t.p2Sub}</div>
             <div style={{ marginBottom: '18px' }}>
-              <div style={{ fontFamily: 'var(--font-barlow-condensed), Barlow Condensed, sans-serif', fontWeight: 800, fontSize: '13px', letterSpacing: '.1em', textTransform: 'uppercase', color: 'var(--navy)', marginBottom: '6px' }}>{t.pAge}</div>
+              <div style={ageLabel}>{t.pAge}</div>
               <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
                 {[t.pKids, t.pTeens, t.pAdults].map(agePill)}
               </div>
@@ -58,23 +84,6 @@ export default function Programs({ t, openModal }: ProgramsProps) {
             <button className="pcard-cta" onClick={openModal}>{t.bookTrial}</button>
           </div>
 
-          {/* Group (Kids) */}
-          <div className="pcard">
-            <div className="pcard-badge">{t.pKidsTeens}</div>
-            <div className="pcard-icon">🧒</div>
-            <div className="pcard-title">{t.p3Title}</div>
-            <div className="pcard-subtitle">{t.p3Sub}</div>
-            <div style={{ marginBottom: '18px' }}>
-              <div style={{ fontFamily: 'var(--font-barlow-condensed), Barlow Condensed, sans-serif', fontWeight: 800, fontSize: '13px', letterSpacing: '.1em', textTransform: 'uppercase', color: 'var(--navy)', marginBottom: '6px' }}>{t.pAge}</div>
-              <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-                {[t.pKids, t.pTeens].map(agePill)}
-              </div>
-            </div>
-            <ul className="pcard-features">
-              {[t.p3F1, t.p3F2, t.p3F3, t.p3F4, t.p3F5].map((f) => <li key={f}>{f}</li>)}
-            </ul>
-            <button className="pcard-cta" onClick={openModal}>{t.bookTrial}</button>
-          </div>
         </div>
 
         {/* Table Hire — below coaching grid */}
