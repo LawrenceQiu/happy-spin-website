@@ -85,7 +85,7 @@ export default function Programs({ t, openModal }: ProgramsProps) {
             <div style={{ fontSize: '0.85rem', color: 'var(--muted)', marginTop: '3px' }}>{t.p4Sub}</div>
             <p style={{ margin: '10px 0 0', fontSize: '0.95rem', color: 'var(--dark)', lineHeight: 1.5 }}>{t.p4Desc}</p>
           </div>
-          <a href="tel:0433883078" style={{ display: 'inline-block', background: 'var(--section-alt)', color: 'var(--navy)', fontFamily: 'var(--font-barlow-condensed), Barlow Condensed, sans-serif', fontWeight: 700, fontSize: '1rem', padding: '13px 24px', borderRadius: '10px', textDecoration: 'none', whiteSpace: 'nowrap', letterSpacing: '.02em' }}>{t.p4Cta}</a>
+          <a href="tel:0433883078" style={{ display: 'inline-block', background: 'var(--navy)', color: 'white', fontFamily: 'var(--font-barlow-condensed), Barlow Condensed, sans-serif', fontWeight: 700, fontSize: '1rem', padding: '13px 24px', borderRadius: '10px', textDecoration: 'none', whiteSpace: 'nowrap', letterSpacing: '.02em' }}>{t.p4Cta}</a>
         </div>
       </div>
     </section>
