@@ -75,6 +75,12 @@ export default function Page() {
     setModalOpen(true)
   }, [])
 
+  useEffect(() => {
+    if (new URLSearchParams(window.location.search).has('enquire')) {
+      openModal()
+    }
+  }, [openModal])
+
   const closeModal = useCallback(() => setModalOpen(false), [])
 
   const openLightbox = useCallback((src: string) => setLightboxSrc(src), [])
