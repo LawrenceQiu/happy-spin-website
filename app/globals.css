@@ -36,6 +36,11 @@ h1, h2, h3, h4 { font-family: var(--font-barlow-condensed), 'Barlow Condensed', 
 a { text-decoration: none; color: inherit; }
 :focus-visible { outline: 2px solid var(--orange); outline-offset: 3px; border-radius: 4px; }
 
+/* Section dividers */
+.trust-bar, .about, .programs, .hiw, .schedule, .coaches, .testimonials, .access, .mid-cta, .faq, .final-cta {
+  border-bottom: 1px solid rgba(0,0,0,.07);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .marquee-track { animation-play-state: paused !important; }
   .hero-image-wrap img { animation: none !important; }
