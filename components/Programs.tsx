@@ -7,7 +7,7 @@ interface ProgramsProps {
 
 export default function Programs({ t, openModal }: ProgramsProps) {
   const agePill = (label: string) => (
-    <span key={label} style={{ background: 'var(--card-bg)', color: 'var(--navy)', fontSize: '13px', fontWeight: 600, padding: '4px 12px', borderRadius: '20px', border: '1px solid rgba(27,58,140,0.15)' }}>
+    <span key={label} style={{ background: 'var(--section-alt)', color: 'var(--navy)', fontSize: '13px', fontWeight: 600, padding: '4px 12px', borderRadius: '20px' }}>
       {label}
     </span>
   )
