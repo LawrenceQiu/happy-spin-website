@@ -367,13 +367,13 @@ a { text-decoration: none; color: inherit; }
 /* ============================================================
    TESTIMONIALS
    ============================================================ */
-.testimonials { padding: 96px 5vw; background: var(--card-bg); }
+.testimonials { padding: 96px 5vw; background: var(--section-alt); }
 .testimonials-inner { max-width: 1100px; margin: 0 auto; }
 .testimonials-header { text-align: center; margin-bottom: 52px; }
 .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .testimonials-grid:has(.tcard:only-child) { grid-template-columns: 1fr; max-width: 680px; margin: 0 auto; }
 .tcard {
-  background: var(--white); border-radius: 20px; padding: 32px 28px;
+  background: var(--card-bg); border-radius: 20px; padding: 32px 28px;
   border: 1.5px solid #E5E7EB;
   transition: box-shadow var(--transition), transform var(--transition);
 }
@@ -397,7 +397,7 @@ a { text-decoration: none; color: inherit; }
 /* ============================================================
    PROGRAMS
    ============================================================ */
-.programs { padding: 96px 5vw; background: var(--section-alt); }
+.programs { padding: 96px 5vw; background: var(--card-bg); }
 .programs-inner { max-width: 1100px; margin: 0 auto; }
 .programs-header { text-align: center; margin-bottom: 52px; }
 .programs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
@@ -477,12 +477,12 @@ a { text-decoration: none; color: inherit; }
 /* ============================================================
    SCHEDULE
    ============================================================ */
-.schedule { padding: 96px 5vw; background: var(--card-bg); }
+.schedule { padding: 96px 5vw; background: var(--section-alt); }
 .schedule-inner { max-width: 900px; margin: 0 auto; }
 .schedule-header { text-align: center; margin-bottom: 52px; }
 .schedule-table {
   width: 100%; border-collapse: collapse; border-radius: 16px;
-  overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,.07);
+  overflow: hidden; background: white; box-shadow: 0 4px 24px rgba(0,0,0,.07);
 }
 .schedule-table th {
   background: var(--navy); color: white; padding: 16px 20px; text-align: left;

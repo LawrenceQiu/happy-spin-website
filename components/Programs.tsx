@@ -78,7 +78,7 @@ export default function Programs({ t, openModal }: ProgramsProps) {
         </div>
 
         {/* Table Hire — below coaching grid */}
-        <div style={{ maxWidth: '1060px', margin: '20px auto 0', background: 'var(--card-bg)', borderRadius: '16px', border: '1px solid rgba(27,58,140,0.1)', padding: '28px 32px', display: 'flex', alignItems: 'center', gap: '24px', flexWrap: 'wrap' }}>
+        <div style={{ maxWidth: '1060px', margin: '20px auto 0', background: 'var(--section-alt)', borderRadius: '16px', border: '1px solid rgba(27,58,140,0.1)', padding: '28px 32px', display: 'flex', alignItems: 'center', gap: '24px', flexWrap: 'wrap' }}>
           <div style={{ fontSize: '2.2rem', lineHeight: 1 }}>🏓</div>
           <div style={{ flex: 1, minWidth: '200px' }}>
             <div style={{ fontFamily: 'var(--font-barlow-condensed), Barlow Condensed, sans-serif', fontWeight: 800, fontSize: '1.25rem', color: 'var(--navy)', textTransform: 'uppercase', letterSpacing: '.04em' }}>{t.p4Title}</div>
