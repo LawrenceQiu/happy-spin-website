@@ -327,7 +327,7 @@ a { text-decoration: none; color: inherit; }
 /* ============================================================
    ABOUT
    ============================================================ */
-.about { padding: 80px 5vw; background: var(--section-alt); }
+.about { padding: 80px 5vw; background: var(--card-bg); }
 .about-inner {
   max-width: 1100px; margin: 0 auto;
   display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;
@@ -370,7 +370,7 @@ a { text-decoration: none; color: inherit; }
 /* ============================================================
    PROGRAMS
    ============================================================ */
-.programs { padding: 80px 5vw; background: var(--card-bg); }
+.programs { padding: 80px 5vw; background: var(--section-alt); }
 .programs-inner { max-width: 1100px; margin: 0 auto; }
 .programs-header { text-align: center; margin-bottom: 48px; }
 .programs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
