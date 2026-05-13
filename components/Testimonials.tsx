@@ -1,9 +1,7 @@
 import type { Translations } from '@/lib/i18n'
 
 const TESTIMONIALS = [
-  // First paragraph (mentions Lawrence by name — restore when ready):
-  // "Lawrence has been a great coach and has really helped me improve my understanding of table tennis and match play. He's patient, encouraging and always willing to help outside of lessons as well, whether that's giving advice, organising match opportunities or helping players feel comfortable in competition environments.\n\n"
-  { name: 'Caleb Y.', role: '', avatar: 'CY', color: '#1B3A8C', stars: 5, quote: "The atmosphere at the club is welcoming and supportive, and you can tell there's a lot of effort going into building a good community around the sport. Really grateful for the experience so far and would definitely recommend it to players wanting to improve and enjoy their table tennis." },
+  { name: 'Caleb Y.', role: '', avatar: 'CY', color: '#1B3A8C', stars: 5, quote: "Lawrence has been a great coach and has really helped me improve my understanding of table tennis and match play. He's patient, encouraging and always willing to help outside of lessons as well, whether that's giving advice, organising match opportunities or helping players feel comfortable in competition environments.\n\nThe atmosphere at the club is welcoming and supportive, and you can tell there's a lot of effort going into building a good community around the sport. Really grateful for the experience so far and would definitely recommend it to players wanting to improve and enjoy their table tennis." },
 ]
 
 export default function Testimonials({ t }: { t: Translations }) {
