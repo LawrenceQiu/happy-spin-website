@@ -18,11 +18,11 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: 'Happy Spin — Table Tennis Academy · Forest Hill, VIC',
-  description: 'Structured table tennis coaching for all ages and levels in Forest Hill, Melbourne. Individual, 1-on-2 and group sessions. Book your free trial session today.',
+  description: 'Structured table tennis coaching for all ages and levels in Forest Hill, Melbourne. Individual, 1-on-2 and group sessions. Book your trial session today.',
   keywords: ['table tennis', 'coaching', 'Forest Hill', 'Melbourne', 'kids', 'adults', 'beginners', 'Happy Spin'],
   openGraph: {
     title: 'Happy Spin Table Tennis Academy | Forest Hill Melbourne',
-    description: 'Structured coaching for all ages and levels in Forest Hill, Melbourne. Book your free trial session today.',
+    description: 'Structured coaching for all ages and levels in Forest Hill, Melbourne. Book your trial session today.',
     images: [{ url: '/hero-graphic.png', width: 800, height: 600, alt: 'Happy Spin Table Tennis Academy' }],
     locale: 'en_AU',
     type: 'website',

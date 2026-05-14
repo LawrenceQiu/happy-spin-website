@@ -104,7 +104,7 @@ const I18N = {
     mDone: 'Done', mSuccessTitle: 'Enquiry Received!',
     mSuccessBody: "Thanks for getting in touch! We'll call or email you within 24 hours.",
     mSuccessCall: 'Questions? Call us on 0433 883 078',
-    stickyCta: '🏓 Book a Free Trial',
+    stickyCta: '🏓 Book a Trial Session',
     mq: ['Structured Coaching', 'All Levels Welcome', 'Kids & Adults', 'Individual, 1-on-2 & Group Programs', 'Build Skills. Build Confidence.', 'Beginner Friendly', 'Fun That Keeps You Coming', 'Great Cardio', 'Sharpen Focus'],
     faqs: [
       { q: 'Do I need any prior experience to join?', a: 'Not at all! Individual and 1-on-2 sessions are available for all ages and skill levels — from absolute beginners to experienced players. Group sessions run on Saturdays and are designed specifically for kids. Wherever you\'re starting from, we\'ll meet you there.' },
@@ -220,7 +220,7 @@ const I18N = {
     mDone: '完成', mSuccessTitle: '咨询已发送!',
     mSuccessBody: '感谢联系!我们会在 24 小时内致电或邮件与您跟进。',
     mSuccessCall: '有疑问?请致电 0433 883 078',
-    stickyCta: '🏓 预约免费试课',
+    stickyCta: '🏓 预约试课',
     mq: ['系统化教学', '适合所有水平', '儿童与成人', '一对一、一对二与小组课', '提升技术与自信', '初学者友好', '越打越上瘾', '出色有氧', '专注力训练'],
     faqs: [
       { q: '需要有基础才能参加吗?', a: '完全不需要!一对一和一对二课程面向所有年龄和水平 — 从零基础到老球友。小组课在周六开设,专为儿童设计。无论起点在哪,我们都能配合你。' },
