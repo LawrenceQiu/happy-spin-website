@@ -46,6 +46,7 @@ export default function Footer({ t, openModal }: FooterProps) {
           <ul>
             <li><a href="tel:0433883078">📞 0433 883 078</a></li>
             <li><a href="mailto:happyspintt@gmail.com">✉ happyspintt@gmail.com</a></li>
+            <li><a href="https://www.instagram.com/happyspin.tt/" target="_blank" rel="noopener noreferrer">📸 @happyspin.tt</a></li>
             <li><a href="#access">{t.footHere}</a></li>
             <li><a href="#faq">{t.navFaq}</a></li>
             <li>
