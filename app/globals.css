@@ -470,9 +470,13 @@ a { text-decoration: none; color: inherit; }
 .hiw-step-desc { font-size: 15px; color: rgba(255,255,255,.65); line-height: 1.65; max-width: 240px; }
 @media (max-width: 640px) {
   .hiw { padding: 64px 5vw; }
-  .hiw-steps { grid-template-columns: 1fr; gap: 40px; }
+  .hiw-steps { grid-template-columns: 1fr; gap: 0; }
   .hiw-steps::before { display: none; }
   .hiw-step-desc { max-width: 100%; }
+  .hiw-step:not(:last-child)::after {
+    content: ''; display: block; width: 2px; height: 28px;
+    background: rgba(232,97,10,.5); margin: 12px auto;
+  }
 }
 
 /* ============================================================
