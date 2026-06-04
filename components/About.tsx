@@ -57,6 +57,7 @@ export default function About({ t, openModal, openLightbox }: AboutProps) {
               width={600}
               height={400}
               sizes="(max-width: 768px) 100vw, 50vw"
+              loading="lazy"
               style={{ width: '100%', height: 'auto', display: 'block' }}
             />
           </div>

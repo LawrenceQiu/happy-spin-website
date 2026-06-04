@@ -65,6 +65,7 @@ export default function Access({ t, openLightbox }: AccessProps) {
                 width={600}
                 height={400}
                 sizes="(max-width: 768px) 100vw, 50vw"
+                loading="lazy"
                 style={{ width: '100%', height: 'auto', display: 'block' }}
               />
             </div>
@@ -88,6 +89,7 @@ export default function Access({ t, openLightbox }: AccessProps) {
                 width={600}
                 height={400}
                 sizes="(max-width: 768px) 100vw, 50vw"
+                loading="lazy"
                 style={{ width: '100%', height: 'auto', display: 'block' }}
               />
             </div>

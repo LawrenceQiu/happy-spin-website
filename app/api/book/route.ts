@@ -15,13 +15,37 @@ const LEVELS: Record<string, string> = {
   advanced: 'Advanced',
 }
 
+function esc(val: unknown): string {
+  return String(val ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#x27;')
+    .slice(0, 1000)
+}
+
 export async function POST(request: Request) {
   try {
     const d = await request.json()
 
+    const name = esc(d.name).trim()
+    const phone = esc(d.phone).trim()
+    const email = esc(d.email).trim()
+    const childName = esc(d.childName).trim()
+    const age = esc(d.age).trim()
+    const message = esc(d.message).trim()
+
+    if (!name || !phone || !email) {
+      return NextResponse.json({ ok: false }, { status: 400 })
+    }
+
     const who = d.bookingFor === 'child'
-      ? `${d.name} (parent) — child: ${d.childName || '—'}`
-      : d.name
+      ? `${name} (parent) — child: ${childName || '—'}`
+      : name
+
+    const program = PROGRAMS[d.program] || esc(d.program) || '—'
+    const level = LEVELS[d.level] || esc(d.level) || '—'
 
     const html = `
 <table style="font-family:sans-serif;font-size:15px;color:#111827;max-width:560px;width:100%">
@@ -31,12 +55,12 @@ export async function POST(request: Request) {
   <tr><td style="border-top:2px solid #E8610A;padding-top:20px">
     <table style="width:100%;border-collapse:collapse">
       <tr><td style="padding:8px 0;color:#6B7280;width:140px">Booking for</td><td style="padding:8px 0;font-weight:600">${who}</td></tr>
-      <tr><td style="padding:8px 0;color:#6B7280">Phone</td><td style="padding:8px 0;font-weight:600">${d.phone}</td></tr>
-      <tr><td style="padding:8px 0;color:#6B7280">Email</td><td style="padding:8px 0;font-weight:600">${d.email}</td></tr>
-      <tr><td style="padding:8px 0;color:#6B7280">Program</td><td style="padding:8px 0;font-weight:600">${PROGRAMS[d.program] || d.program || '—'}</td></tr>
-      <tr><td style="padding:8px 0;color:#6B7280">Age</td><td style="padding:8px 0;font-weight:600">${d.age || '—'}</td></tr>
-      <tr><td style="padding:8px 0;color:#6B7280">Skill level</td><td style="padding:8px 0;font-weight:600">${LEVELS[d.level] || d.level || '—'}</td></tr>
-      ${d.message ? `<tr><td style="padding:8px 0;color:#6B7280;vertical-align:top">Notes</td><td style="padding:8px 0">${d.message}</td></tr>` : ''}
+      <tr><td style="padding:8px 0;color:#6B7280">Phone</td><td style="padding:8px 0;font-weight:600">${phone}</td></tr>
+      <tr><td style="padding:8px 0;color:#6B7280">Email</td><td style="padding:8px 0;font-weight:600">${email}</td></tr>
+      <tr><td style="padding:8px 0;color:#6B7280">Program</td><td style="padding:8px 0;font-weight:600">${program}</td></tr>
+      <tr><td style="padding:8px 0;color:#6B7280">Age</td><td style="padding:8px 0;font-weight:600">${age || '—'}</td></tr>
+      <tr><td style="padding:8px 0;color:#6B7280">Skill level</td><td style="padding:8px 0;font-weight:600">${level}</td></tr>
+      ${message ? `<tr><td style="padding:8px 0;color:#6B7280;vertical-align:top">Notes</td><td style="padding:8px 0">${message}</td></tr>` : ''}
     </table>
   </td></tr>
   <tr><td style="padding:24px 0 0;color:#6B7280;font-size:13px">
@@ -48,7 +72,7 @@ export async function POST(request: Request) {
       from: 'Happy Spin Bookings <bookings@happyspin.com.au>',
       to: 'happyspintt@gmail.com',
       replyTo: d.email,
-      subject: `New Trial Enquiry — ${d.name}`,
+      subject: `New Trial Enquiry — ${name}`,
       html,
     })
 

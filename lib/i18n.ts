@@ -59,7 +59,7 @@ const I18N = {
     hBody: 'Three simple steps to your first session. No commitment, no equipment needed.',
     h1Title: 'Get in Touch', h1Desc: 'Call us on 0433 883 078 or fill in the booking form. We\'ll chat about what you\'re looking for and find the right session for you.',
     h2Title: 'Come & Try', h2Desc: 'Rock up in comfortable clothes and closed-toe shoes. We bring the balls and ball pickers — spare paddles available on request. Just play.',
-    h3Title: 'Keep Improving', h3Desc: 'Choose individual, 1-on-2, or group sessions for kids on Saturdays. Lock in a regular spot and watch your game grow.',
+    h3Title: 'Keep Improving', h3Desc: 'Pick the format that suits you — individual, 1-on-2, or group. Lock in a regular spot and watch your game grow.',
     sLabel: 'When We Run', sTitle: 'Weekly Schedule',
     sBody: 'Sessions run throughout the week. Contact us to confirm current availability and exact times.',
     sDay: 'Day', sTime: 'Time', sProgram: 'Program', sAvail: 'Availability',
@@ -167,10 +167,10 @@ const I18N = {
     p3F1: '至少1名教练带4名学员', p3F2: '为小球员设计的趣味结构化训练',
     p3F3: '培养专注力、协调性和自信', p3F4: '安全、有人监督、积极鼓励的环境',
     p3F5: '提供球与拾球器;球拍可预约借用',
-    p4Title: 'Table Hire', // TODO: translate
-    p4Sub: 'Casual hire · Subject to availability', // TODO: translate
-    p4Desc: 'Book a table and play at your own pace — no coach required. Balls and ball pickers provided. Contact us to check availability and pricing.', // TODO: translate
-    p4Cta: 'Call to Book → 0433 883 078', // TODO: translate
+    p4Title: '乒乓球台租用',
+    p4Sub: '临时租用 · 按可用性',
+    p4Desc: '租用球台，按自己的节奏打球 — 无需教练。提供球与拾球器。请联系我们确认可用性和价格。',
+    p4Cta: '致电预约 → 0433 883 078',
     hLabel: '如何开始', hTitle: '开始很简单',
     hBody: '三步开启你的第一节课。无需承诺,无需自备装备。',
     h1Title: '联系我们', h1Desc: '拨打 0433 883 078 或填写预约表。我们会沟通你的需求,推荐合适的课程。',
