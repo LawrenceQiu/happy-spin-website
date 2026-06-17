@@ -44,7 +44,7 @@ export default function Access({ t, openLightbox }: AccessProps) {
 
           <a
             className="access-maps-btn"
-            href="https://maps.google.com/?q=140+Mahoneys+Road+Forest+Hill+VIC+3131"
+            href="https://www.google.com/maps/place/Happy+Spin+Table+Tennis+Academy/data=!4m2!3m1!1s0x0:0xbb3ab21477980f3a"
             target="_blank"
             rel="noopener noreferrer"
           >
