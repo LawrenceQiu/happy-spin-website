@@ -101,7 +101,6 @@ export default function Page() {
       <HowItWorks t={t} />
       <Schedule t={t} openModal={openModal} />
       <Coaches t={t} />
-      <Testimonials t={t} />
       <Access t={t} openLightbox={openLightbox} />
       <MidCta t={t} openModal={openModal} />
       <Faq t={t} faqOpen={faqOpen} setFaqOpen={setFaqOpen} />
