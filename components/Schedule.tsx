@@ -63,8 +63,13 @@ export default function Schedule({ t, openModal }: ScheduleProps) {
             <tr className="sat-row">
               <td><strong>{t.sSat}</strong></td>
               <td>5:00 PM – 6:30 PM</td>
-              <td><span className="sched-tag beginner">{t.sGroupAdults}</span></td>
-              <td><span className="spots-chip avail"><span className="spots-dot" />{t.sSpots}</span></td>
+              <td><span className="sched-tag kids">{t.sGroupAdults}</span></td>
+              <td>
+                <span className="spots-chip limited">
+                  <span className="spots-dot" />
+                  {t.sLimited}
+                </span>
+              </td>
             </tr>
           </tbody>
         </table>
