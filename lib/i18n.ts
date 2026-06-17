@@ -113,7 +113,7 @@ const I18N = {
       { q: 'How are group sessions structured?', a: 'Group sessions run every Saturday with separate timeslots for kids (3:30–5:00 PM) and adults (5:00–6:30 PM). We maintain a minimum ratio of one coach per four students, so every player receives focused coaching. Sessions are fun, structured, and tailored to the age group.' },
       { q: 'How do I book a trial session?', a: 'Simply fill out the booking form on this page, or call us directly on 0433 883 078. We\'ll get back to you within 24 hours to confirm your spot.' },
       { q: 'What are the costs after the trial?', a: 'We offer flexible term and casual options to suit your schedule and budget. Contact us directly for current pricing — we\'ll find a plan that works for you.' },
-      { q: 'Is table tennis good exercise?', a: 'Absolutely. Table tennis is a fantastic full-body workout — it improves reflexes, coordination, cardiovascular fitness, and mental sharpness. It\'s fun AND effective!' },
+      { q: 'Is table tennis good exercise?', a: 'More than most people expect. It\'s fast-paced, keeps you on your feet the whole time, and the mental side — reading spin, reacting quickly, staying focused — makes it genuinely tiring in a good way. A lot of our players are surprised by how much of a workout it actually is.' },
     ],
   },
   zh: {
