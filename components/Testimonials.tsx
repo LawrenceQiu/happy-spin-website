@@ -35,6 +35,16 @@ export default function Testimonials({ t }: { t: Translations }) {
             </div>
           ))}
         </div>
+        <div style={{ textAlign: 'center', marginTop: '32px' }}>
+          <a
+            href="https://g.page/r/CToPmHcUsjq7EBM/review"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="review-cta"
+          >
+            ★ Enjoyed your sessions? Leave us a Google review
+          </a>
+        </div>
       </div>
     </section>
   )
