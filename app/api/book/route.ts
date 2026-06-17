@@ -6,7 +6,7 @@ const resend = new Resend(process.env.RESEND_API_KEY)
 const PROGRAMS: Record<string, string> = {
   individual: 'Individual (1-on-1)',
   '1on2': '1-on-2',
-  'group-kids': 'Group Sessions (Kids – Saturdays)',
+  'group-kids': 'Group Sessions (Saturdays)',
 }
 
 const LEVELS: Record<string, string> = {
