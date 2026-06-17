@@ -50,13 +50,13 @@ export default function Programs({ t, openModal }: ProgramsProps) {
           {/* Group Sessions — featured */}
           <div className="pcard featured">
             <div className="pcard-badge">{t.pKidsTeens}</div>
-            <div className="pcard-icon">🧒</div>
+            <div className="pcard-icon">🏓</div>
             <div className="pcard-title">{t.p3Title}</div>
             <div className="pcard-subtitle">{t.p3Sub}</div>
             <div style={{ marginBottom: '18px' }}>
               <div style={ageLabel}>{t.pAge}</div>
               <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-                {[t.pKids, t.pTeens].map(agePill)}
+                {[t.pKids, t.pTeens, t.pAdults].map(agePill)}
               </div>
             </div>
             <ul className="pcard-features">

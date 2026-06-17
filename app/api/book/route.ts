@@ -7,6 +7,7 @@ const PROGRAMS: Record<string, string> = {
   individual: 'Individual (1-on-1)',
   '1on2': '1-on-2',
   'group-kids': 'Group Sessions (Saturdays)',
+  'holiday': 'Holiday Program (Jun 30, Jul 2 & 4)',
 }
 
 const LEVELS: Record<string, string> = {

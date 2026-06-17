@@ -13,6 +13,7 @@ import Coaches from '@/components/Coaches'
 import Testimonials from '@/components/Testimonials'
 import Programs from '@/components/Programs'
 import HowItWorks from '@/components/HowItWorks'
+import HolidaySection from '@/components/HolidaySection'
 import Schedule from '@/components/Schedule'
 import Access from '@/components/Access'
 import MidCta from '@/components/MidCta'
@@ -75,6 +76,12 @@ export default function Page() {
     setModalOpen(true)
   }, [])
 
+  const openModalHoliday = useCallback(() => {
+    setFormStep('form')
+    setFormData({ name: '', phone: '', email: '', program: 'holiday', message: '', bookingFor: 'myself', childName: '', age: '', level: '' })
+    setModalOpen(true)
+  }, [])
+
   useEffect(() => {
     if (new URLSearchParams(window.location.search).has('enquire')) {
       openModal()
@@ -96,6 +103,7 @@ export default function Page() {
       <Marquee t={t} />
       <StatStrip t={t} />
       <TrustBar t={t} />
+      <HolidaySection t={t} openModal={openModalHoliday} />
       <About t={t} openModal={openModal} openLightbox={openLightbox} />
       <Programs t={t} openModal={openModal} />
       <HowItWorks t={t} />

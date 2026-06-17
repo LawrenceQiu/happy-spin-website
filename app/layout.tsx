@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     type: 'website',
   },
   robots: { index: true, follow: true },
+  verification: { google: 'Zy8aScjX9KCIN8RAMBlE0wnrjRPqCfeD8otiX_XsANQ' },
 }
 
 const jsonLd = {
