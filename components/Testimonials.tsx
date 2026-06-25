@@ -24,14 +24,8 @@ function Stars({ n }: { n: number }) {
   )
 }
 
-function Avatar({ name, photo }: { name: string; photo?: string }) {
-  if (photo) {
-    return <img src={photo} alt={name} className="tcard-avatar-img" referrerPolicy="no-referrer" />
-  }
-  const initials = (name.split(' ')[0][0] ?? '').toUpperCase()
-  const palette = ['#1B3A8C', '#E8610A', '#4BA3D3', '#2D6A4F', '#7C3AED']
-  const color = palette[initials.charCodeAt(0) % palette.length]
-  return <div className="tcard-avatar" style={{ background: color }}>{initials}</div>
+function firstName(name: string) {
+  return name.split(' ')[0]
 }
 
 const GoogleLogo = () => (
@@ -81,9 +75,8 @@ export default function Testimonials({ t }: { t: Translations }) {
                 </div>
                 <p className="tcard-quote">&ldquo;{review.text}&rdquo;</p>
                 <div className="tcard-author">
-                  <Avatar name={review.author_name} photo={review.profile_photo_url} />
                   <div>
-                    <div className="tcard-name">{review.author_name}</div>
+                    <div className="tcard-name">{firstName(review.author_name)}</div>
                     <div className="tcard-role">{review.relative_time_description}</div>
                   </div>
                 </div>
