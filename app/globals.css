@@ -386,17 +386,25 @@ a { text-decoration: none; color: inherit; }
   transition: box-shadow var(--transition), transform var(--transition);
 }
 .tcard:hover { box-shadow: var(--shadow-hover); transform: translateY(-3px); }
-.tcard-stars { color: #FBBF24; font-size: 18px; margin-bottom: 16px; letter-spacing: 2px; }
-.tcard-quote { font-size: 15px; line-height: 1.7; color: var(--dark); margin-bottom: 24px; font-style: italic; }
-.tcard-author { display: flex; align-items: center; gap: 12px; }
+.tcard-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+.tcard-stars { color: #FBBF24; font-size: 17px; letter-spacing: 2px; }
+.tcard-quote { font-size: 15px; line-height: 1.7; color: var(--dark); margin-bottom: 24px; font-style: italic; flex: 1; }
+.tcard-author { display: flex; align-items: center; gap: 12px; margin-top: auto; }
 .tcard-avatar {
-  width: 42px; height: 42px; border-radius: 50%;
+  width: 42px; height: 42px; border-radius: 50%; flex-shrink: 0;
   display: flex; align-items: center; justify-content: center;
   font-family: var(--font-barlow-condensed), 'Barlow Condensed', sans-serif;
   font-weight: 800; font-size: 18px; color: white;
 }
+.tcard-avatar-img { width: 42px; height: 42px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
 .tcard-name { font-weight: 600; font-size: 14px; }
 .tcard-role { font-size: 13px; color: var(--muted); }
+.tcard-skeleton { height: 220px; background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%); background-size: 200% 100%; animation: shimmer 1.5s infinite; border: none; }
+@keyframes shimmer { 0% { background-position: 200% 0 } 100% { background-position: -200% 0 } }
+.testimonials-rating { display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 12px; }
+.tr-stars { color: #FBBF24; font-size: 20px; letter-spacing: 2px; }
+.tr-score { font-family: var(--font-barlow-condensed), 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 800; color: var(--navy); }
+.tr-count { font-size: 14px; color: var(--muted); }
 .review-cta {
   display: inline-block; font-size: 14px; font-weight: 600;
   color: var(--navy); border: 1.5px solid var(--navy);
