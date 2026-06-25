@@ -14,9 +14,27 @@ export async function GET() {
   const data = await res.json()
 
   const blocked = ['chadeus']
-  const reviews = (data.result?.reviews ?? []).filter(
+  const apiReviews = (data.result?.reviews ?? []).filter(
     (r: { author_name: string }) => !blocked.some((name) => r.author_name.toLowerCase().includes(name.toLowerCase()))
   )
+
+  const extra = [
+    {
+      author_name: 'Douglas Sum',
+      rating: 5,
+      text: 'Good coaches, good vibes! Thanks Coach Anthony and Jerry for bringing back my childhood hobby!',
+      relative_time_description: 'a week ago',
+    },
+    {
+      author_name: 'Yuan Ke',
+      rating: 5,
+      text: 'My son is learning table tennis here and is very happy with the coaching and support. The coaches are patient and encouraging, and he really enjoys every session.',
+      relative_time_description: 'a week ago',
+    },
+  ]
+
+  const seen = new Set(apiReviews.map((r: { author_name: string }) => r.author_name.toLowerCase()))
+  const reviews = [...apiReviews, ...extra.filter((r) => !seen.has(r.author_name.toLowerCase()))]
 
   return NextResponse.json({
     reviews,
