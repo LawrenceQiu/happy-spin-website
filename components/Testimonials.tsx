@@ -79,7 +79,7 @@ export default function Testimonials({ t }: { t: Translations }) {
                   <Stars n={review.rating} />
                   <GoogleLogo />
                 </div>
-                <p className="tcard-quote">"{review.text}"</p>
+                <p className="tcard-quote">&ldquo;{review.text}&rdquo;</p>
                 <div className="tcard-author">
                   <Avatar name={review.author_name} photo={review.profile_photo_url} />
                   <div>
