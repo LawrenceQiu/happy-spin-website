@@ -13,8 +13,13 @@ export async function GET() {
   const res = await fetch(url, { next: { revalidate: 3600 } })
   const data = await res.json()
 
+  const blocked = ['chadeus']
+  const reviews = (data.result?.reviews ?? []).filter(
+    (r: { author_name: string }) => !blocked.some((name) => r.author_name.toLowerCase().includes(name.toLowerCase()))
+  )
+
   return NextResponse.json({
-    reviews: data.result?.reviews ?? [],
+    reviews,
     rating: data.result?.rating ?? 0,
     total: data.result?.user_ratings_total ?? 0,
   })
