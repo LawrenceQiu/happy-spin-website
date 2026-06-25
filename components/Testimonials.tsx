@@ -28,7 +28,7 @@ function Avatar({ name, photo }: { name: string; photo?: string }) {
   if (photo) {
     return <img src={photo} alt={name} className="tcard-avatar-img" referrerPolicy="no-referrer" />
   }
-  const initials = name.split(' ').map((w) => w[0]).join('').slice(0, 2).toUpperCase()
+  const initials = (name.split(' ')[0][0] ?? '').toUpperCase()
   const palette = ['#1B3A8C', '#E8610A', '#4BA3D3', '#2D6A4F', '#7C3AED']
   const color = palette[initials.charCodeAt(0) % palette.length]
   return <div className="tcard-avatar" style={{ background: color }}>{initials}</div>
