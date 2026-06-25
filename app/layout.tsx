@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Happy Spin Table Tennis Academy | Forest Hill Melbourne',
     description: 'Structured coaching for all ages and levels in Forest Hill, Melbourne. Book your trial session today.',
-    images: [{ url: '/hero-graphic.png', width: 800, height: 600, alt: 'Happy Spin Table Tennis Academy' }],
+    images: [{ url: '/logo.png', alt: 'Happy Spin Table Tennis Academy' }],
     locale: 'en_AU',
     type: 'website',
   },
@@ -53,7 +53,7 @@ const jsonLd = {
     { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Thursday', opens: '16:30', closes: '18:30' },
     { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '13:00', closes: '19:00' },
   ],
-  image: '/hero-graphic.png',
+  image: '/logo.png',
   priceRange: '$$',
   currenciesAccepted: 'AUD',
 }
