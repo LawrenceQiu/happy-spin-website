@@ -109,7 +109,7 @@ const I18N = {
     gtTagline: 'Structured coaching in a small, fun group environment',
     gtChip: 'Term 3 · Starting 18 July 2026 · 9 Weeks · Every Saturday',
     gtF1: 'Max 4 Students Per Coach', gtF2: 'Multiball Drills', gtF3: 'Match Play & Games', gtF4: 'All Levels Welcome', gtF5: 'Technique Development',
-    gtNote: 'Limited spots available — session time TBA, groups split by level based on enrolments',
+    gtNote: 'Limited spots available — session time TBA based on enrolments',
     gtCta: 'Secure Your Spot', gtLearn: 'Full details →',
     mq: ['Structured Coaching', 'All Levels Welcome', 'Kids & Adults', 'Individual, 1-on-2 & Group Programs', 'Build Skills. Build Confidence.', 'Beginner Friendly', 'Fun That Keeps You Coming', 'Great Cardio', 'Sharpen Focus'],
     faqs: [
@@ -231,7 +231,7 @@ const I18N = {
     gtTagline: '小班制、趣味十足的系统化教学',
     gtChip: '第三学期 · 7月18日开课 · 共9周 · 每周六',
     gtF1: '每班最多4名学员', gtF2: '多球训练', gtF3: '比赛与对打', gtF4: '所有水平均可', gtF5: '技术提升',
-    gtNote: '名额有限 — 上课时间待定，根据报名人数按水平分组',
+    gtNote: '名额有限 — 上课时间根据报名人数待定',
     gtCta: '立即咨询', gtLearn: '了解详情 →',
     mq: ['系统化教学', '适合所有水平', '儿童与成人', '一对一、一对二与小组课', '提升技术与自信', '初学者友好', '越打越上瘾', '出色有氧', '专注力训练'],
     faqs: [
