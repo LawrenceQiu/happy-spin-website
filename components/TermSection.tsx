@@ -118,7 +118,7 @@ export default function TermSection({ t, openModal }: TermSectionProps) {
             <div className="term-phases">
               {phases.map((p) => (
                 <div key={p.num} className="term-phase">
-                  <div className="term-phase-num">{p.num}</div>
+                  <div className="term-phase-dot">{p.num}</div>
                   <div className="term-phase-title">{p.title}</div>
                   <p className="term-phase-desc">{p.desc}</p>
                 </div>
@@ -140,7 +140,7 @@ export default function TermSection({ t, openModal }: TermSectionProps) {
                 <p className="term-expand-heading">What to bring</p>
                 {bring.map((b) => (
                   <div key={b.item} className="term-bring-item">
-                    <span className="term-bring-check">✓</span>
+                    <div className="term-bring-check">✓</div>
                     <div>
                       <div className="term-bring-title">{b.item}</div>
                       <div className="term-bring-note">{b.note}</div>
