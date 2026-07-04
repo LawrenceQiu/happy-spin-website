@@ -153,7 +153,6 @@ export default function BookingModal({
                 <option value="individual">{t.mProgInd}</option>
                 <option value="1on2">{t.mProg1on2}</option>
                 <option value="group-kids">{t.mProgGroup}</option>
-                <option value="term-kids">{t.mProgTerm}</option>
               </select>
             </div>
 
