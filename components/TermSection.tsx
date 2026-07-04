@@ -32,7 +32,7 @@ const phases = [
   {
     num: '04',
     title: 'Match Play & Games',
-    desc: 'Students rotate 1-on-1 with the coach for focused game practice. While waiting, players use other tables to compete and stay active.',
+    desc: 'Competitive matches and games to put skills into practice. Students build real match experience, tactical awareness, and composure under pressure.',
   },
 ]
 
