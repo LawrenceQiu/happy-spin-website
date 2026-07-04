@@ -17,22 +17,22 @@ const phases = [
   {
     num: '01',
     title: 'Warm-Up & Stretching',
-    desc: 'Dynamic warm-up to get the body ready and reduce injury risk before training begins.',
+    desc: 'Get the body moving and ready to train safely.',
   },
   {
     num: '02',
     title: 'Fundamentals Practice',
-    desc: 'Forehand-to-forehand, backhand-to-backhand, and cross-court rallying to build stroke consistency and technique.',
+    desc: 'Practise core strokes and build rally consistency with a partner.',
   },
   {
     num: '03',
     title: 'Multiball Drills',
-    desc: 'Targeted repetition with multiball — footwork patterns, transitions, and stroke development under realistic pressure.',
+    desc: 'High-rep drills with the coach to sharpen movement and technique.',
   },
   {
     num: '04',
     title: 'Match Play & Games',
-    desc: 'Competitive matches and games to put skills into practice. Students build real match experience, tactical awareness, and composure under pressure.',
+    desc: 'Competitive games to apply skills and build real match experience.',
   },
 ]
 
