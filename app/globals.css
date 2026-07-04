@@ -812,99 +812,94 @@ a { text-decoration: none; color: inherit; }
 .photo-hover-wrap:hover img { transform: scale(1.04); }
 
 /* ============================================================
-   HOLIDAY PROGRAM SECTION
+   TERM PROGRAM SECTION
    ============================================================ */
-.holiday {
+.term {
   padding: 80px 5vw;
   background: linear-gradient(140deg, #1B3A8C 0%, #0f2460 100%);
   position: relative; overflow: hidden;
 }
-.holiday::before {
+.term::before {
   content: '';
   position: absolute; top: -120px; right: -120px;
   width: 500px; height: 500px;
   background: radial-gradient(circle, rgba(232,97,10,.2) 0%, transparent 65%);
   pointer-events: none;
 }
-.holiday-inner { max-width: 1060px; margin: 0 auto; position: relative; }
-.holiday-layout { display: grid; grid-template-columns: 1fr 300px; gap: 60px; align-items: center; }
+.term-inner { max-width: 1060px; margin: 0 auto; position: relative; }
+.term-layout { display: grid; grid-template-columns: 1fr 260px; gap: 60px; align-items: center; }
 
 /* Left text */
-.holiday-eyebrow {
+.term-eyebrow {
   display: inline-block; background: var(--orange); color: white;
   border-radius: 50px; padding: 6px 18px; font-size: 11px; font-weight: 700;
   letter-spacing: .1em; text-transform: uppercase; margin-bottom: 16px;
 }
-.holiday-title {
+.term-title {
   font-family: var(--font-barlow-condensed), 'Barlow Condensed', sans-serif;
   font-size: clamp(44px, 5.5vw, 64px); font-weight: 900; color: white;
   letter-spacing: -.02em; line-height: 1; margin-bottom: 12px;
 }
-.holiday-tagline { font-size: 18px; color: rgba(255,255,255,.72); font-weight: 500; margin: 0 0 28px; }
-.holiday-chips { display: flex; flex-direction: column; gap: 9px; margin-bottom: 28px; }
-.holiday-chip { font-size: 15px; color: rgba(255,255,255,.78); }
-.holiday-features { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
-.holiday-feature {
+.term-tagline { font-size: 18px; color: rgba(255,255,255,.72); font-weight: 500; margin: 0 0 28px; }
+.term-features { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+.term-feature {
   background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.16);
   color: white; border-radius: 50px; padding: 5px 14px; font-size: 13px; font-weight: 500;
 }
-.holiday-note { font-size: 13px; color: rgba(255,255,255,.42); margin-bottom: 32px; }
-.holiday-actions { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
-.holiday-cta {
+.term-note { font-size: 13px; color: rgba(255,255,255,.42); margin-bottom: 32px; }
+.term-actions { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+.term-cta {
   background: var(--orange); color: white; border: none; border-radius: 50px;
   padding: 14px 32px; font-size: 16px; font-weight: 700; cursor: pointer;
   font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
   box-shadow: 0 4px 20px rgba(232,97,10,.45);
   transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
 }
-.holiday-cta:hover { background: #d05508; transform: translateY(-2px); box-shadow: 0 8px 28px rgba(232,97,10,.55); }
-.holiday-phone {
-  color: rgba(255,255,255,.58); font-size: 14px; font-weight: 500;
-  text-decoration: none; transition: color var(--transition);
+.term-cta:hover { background: #d05508; transform: translateY(-2px); box-shadow: 0 8px 28px rgba(232,97,10,.55); }
+.term-learn {
+  color: rgba(255,255,255,.75); font-size: 15px; font-weight: 600;
+  text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.3); padding-bottom: 2px;
+  transition: color var(--transition), border-color var(--transition);
 }
-.holiday-phone:hover { color: white; }
+.term-learn:hover { color: white; border-color: white; }
 
-/* Dates card */
-.holiday-card {
+/* Date card */
+.term-card {
   background: white; border-radius: 20px; overflow: hidden;
   box-shadow: 0 24px 64px rgba(0,0,0,.32), 0 0 0 1px rgba(255,255,255,.06);
+  text-align: center;
 }
-.holiday-card-header {
-  background: var(--orange); color: white; text-align: center;
+.term-card-header {
+  background: var(--orange); color: white;
   padding: 14px 20px; font-size: 11px; font-weight: 700;
   letter-spacing: .12em; text-transform: uppercase;
 }
-.holiday-card-dates { padding: 4px 0; }
-.hcd-row {
-  display: grid; grid-template-columns: 1fr 52px 1fr;
-  align-items: center; padding: 14px 24px;
-  border-bottom: 1px solid #EEF0F8;
-}
-.hcd-row:last-child { border-bottom: none; }
-.hcd-day { font-size: 11px; font-weight: 700; color: #9CA3AF; text-transform: uppercase; letter-spacing: .07em; }
-.hcd-num {
+.term-card-body { padding: 28px 24px 20px; }
+.term-card-num {
   font-family: var(--font-barlow-condensed), 'Barlow Condensed', sans-serif;
-  font-size: 50px; font-weight: 900; color: var(--navy); line-height: 1; text-align: center;
+  font-size: 96px; font-weight: 900; color: var(--navy); line-height: 1;
 }
-.hcd-month { font-size: 12px; font-weight: 700; color: var(--orange); text-transform: uppercase; letter-spacing: .07em; text-align: right; }
-.holiday-card-time {
+.term-card-month {
+  font-size: 18px; font-weight: 700; color: var(--orange);
+  text-transform: uppercase; letter-spacing: .1em; margin-top: 4px;
+}
+.term-card-footer {
   background: #F5F7FF; padding: 14px 24px;
-  text-align: center; font-size: 13px; color: var(--navy); font-weight: 600;
+  font-size: 13px; color: var(--navy); font-weight: 600;
   border-top: 1px solid #EEF0F8;
 }
 
 @media (max-width: 900px) {
-  .holiday-layout { grid-template-columns: 1fr; gap: 40px; }
-  .holiday-title { text-align: center; }
-  .holiday-tagline { text-align: center; }
-  .holiday-chips { align-items: center; }
-  .holiday-features { justify-content: center; }
-  .holiday-note { text-align: center; }
-  .holiday-actions { justify-content: center; }
-  .holiday-card { max-width: 320px; margin: 0 auto; }
+  .term-layout { grid-template-columns: 1fr; gap: 40px; }
+  .term-title { text-align: center; }
+  .term-tagline { text-align: center; }
+  .term-features { justify-content: center; }
+  .term-note { text-align: center; }
+  .term-actions { justify-content: center; }
+  .term-card { max-width: 260px; margin: 0 auto; }
 }
 @media (max-width: 480px) {
-  .holiday { padding: 60px 5vw; }
-  .holiday-title { font-size: 48px; }
-  .hcd-num { font-size: 44px; }
+  .term { padding: 60px 5vw; }
+  .term-title { font-size: 48px; }
+  .term-card-num { font-size: 80px; }
 }
