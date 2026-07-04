@@ -6,6 +6,12 @@ interface TermSectionProps {
   openModal: () => void
 }
 
+const MONTHS = [
+  { name: 'July', dates: [18, 25] },
+  { name: 'August', dates: [1, 8, 15, 22, 29] },
+  { name: 'September', dates: [5, 12] },
+]
+
 export default function TermSection({ t, openModal }: TermSectionProps) {
   return (
     <section className="term" id="term-program">
@@ -28,13 +34,27 @@ export default function TermSection({ t, openModal }: TermSectionProps) {
             </div>
           </div>
 
-          <div className="term-card">
-            <div className="term-card-header">Term 3 · 2026</div>
-            <div className="term-card-body">
-              <div className="term-card-num">18</div>
-              <div className="term-card-month">July</div>
+          <div className="term-cal">
+            <div className="term-cal-header">
+              <span className="term-cal-label">Term 3 · 2026</span>
+              <span className="term-cal-sat">Every Saturday</span>
             </div>
-            <div className="term-card-footer">9 Weeks · Every Saturday</div>
+            <div className="term-cal-body">
+              {MONTHS.map(({ name, dates }, i) => (
+                <div key={name} className={`term-cal-month${i < MONTHS.length - 1 ? ' term-cal-month--divider' : ''}`}>
+                  <div className="term-cal-month-name">{name}</div>
+                  <div className="term-cal-dates">
+                    {dates.map((d) => (
+                      <div key={d} className="term-cal-date">
+                        <span className="term-cal-date-num">{d}</span>
+                        <span className="term-cal-date-day">Sat</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="term-cal-footer">9 sessions · 1.5 hrs each</div>
           </div>
 
         </div>
