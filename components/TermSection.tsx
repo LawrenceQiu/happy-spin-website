@@ -21,6 +21,7 @@ export default function TermSection({ t, openModal }: TermSectionProps) {
           <div className="term-text">
             <div className="term-eyebrow">{t.gtLabel}</div>
             <h2 className="term-title">{t.gtTitle}</h2>
+            <p className="term-chip">{t.gtChip}</p>
             <p className="term-tagline">{t.gtTagline}</p>
             <div className="term-features">
               {([t.gtF1, t.gtF2, t.gtF3, t.gtF4] as string[]).map((f) => (

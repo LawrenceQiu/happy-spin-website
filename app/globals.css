@@ -840,13 +840,14 @@ a { text-decoration: none; color: inherit; }
   font-size: clamp(44px, 5.5vw, 64px); font-weight: 900; color: white;
   letter-spacing: -.02em; line-height: 1; margin-bottom: 12px;
 }
-.term-tagline { font-size: 18px; color: rgba(255,255,255,.72); font-weight: 500; margin: 0 0 28px; }
+.term-chip { font-size: 14px; font-weight: 700; color: var(--orange); margin: 0 0 14px; letter-spacing: .01em; }
+.term-tagline { font-size: 17px; color: rgba(255,255,255,.65); font-weight: 400; margin: 0 0 24px; }
 .term-features { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
 .term-feature {
   background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.16);
   color: white; border-radius: 50px; padding: 5px 14px; font-size: 13px; font-weight: 500;
 }
-.term-note { font-size: 13px; color: rgba(255,255,255,.42); margin-bottom: 32px; }
+.term-note { font-size: 13px; color: rgba(255,255,255,.6); margin-bottom: 32px; }
 .term-actions { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
 .term-cta {
   background: var(--orange); color: white; border: none; border-radius: 50px;
