@@ -22,7 +22,7 @@ const phases = [
   {
     num: '02',
     title: 'Fundamentals Practice',
-    desc: 'Practise core strokes and build rally consistency with a partner.',
+    desc: 'Practise core strokes and build rally consistency.',
   },
   {
     num: '03',
