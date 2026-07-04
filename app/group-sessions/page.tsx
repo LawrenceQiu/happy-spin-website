@@ -76,7 +76,7 @@ export default function GroupSessionsPage() {
           <p style={{ fontSize: '15px', color: '#E8610A', fontWeight: 700, margin: '0 0 36px' }}>
             Starting 18 July 2026 · 9 Weeks · Every Saturday
           </p>
-          <a
+          <Link
             href="/?enquire=1"
             style={{
               display: 'inline-block', background: '#E8610A', color: 'white',
@@ -86,7 +86,7 @@ export default function GroupSessionsPage() {
             }}
           >
             Enquire Now
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -191,7 +191,7 @@ export default function GroupSessionsPage() {
             Fill out our enquiry form and we&apos;ll get back to you within 24 hours to confirm your spot and session time. Spots are limited so get in early.
           </p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap', alignItems: 'center' }}>
-            <a
+            <Link
               href="/?enquire=1"
               style={{
                 display: 'inline-block', background: '#E8610A', color: 'white',
@@ -201,7 +201,7 @@ export default function GroupSessionsPage() {
               }}
             >
               Enquire Now
-            </a>
+            </Link>
             <a href="tel:0433883078" style={{ color: '#1B3A8C', fontSize: '15px', fontWeight: 600, textDecoration: 'none' }}>
               or call 0433 883 078
             </a>
