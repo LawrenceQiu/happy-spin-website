@@ -933,7 +933,7 @@ a { text-decoration: none; color: inherit; }
 }
 .term-phases::before {
   content: ''; position: absolute;
-  top: 19px; left: calc(12.5% + 4px); right: calc(12.5% + 4px);
+  top: 19px; left: 36px; right: calc(25% - 36px);
   height: 2px; background: rgba(255,255,255,.12); z-index: 0;
 }
 .term-phase { padding: 0 16px; position: relative; }
