@@ -5,9 +5,7 @@ import I18N, { type Lang } from '@/lib/i18n'
 import Nav from '@/components/Nav'
 import MobileMenu from '@/components/MobileMenu'
 import Hero from '@/components/Hero'
-import Marquee from '@/components/Marquee'
 import StatStrip from '@/components/StatStrip'
-import TrustBar from '@/components/TrustBar'
 import About from '@/components/About'
 import Coaches from '@/components/Coaches'
 import Testimonials from '@/components/Testimonials'
@@ -16,7 +14,6 @@ import HowItWorks from '@/components/HowItWorks'
 import TermSection from '@/components/TermSection'
 import Schedule from '@/components/Schedule'
 import Access from '@/components/Access'
-import MidCta from '@/components/MidCta'
 import Faq from '@/components/Faq'
 import FinalCta from '@/components/FinalCta'
 import Footer from '@/components/Footer'
@@ -65,6 +62,27 @@ export default function Page() {
     return () => { document.body.style.overflow = '' }
   }, [modalOpen, menuOpen, lightboxSrc])
 
+  // Fade sections in as they scroll into view (added client-side so content is visible without JS)
+  useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+    const els = document.querySelectorAll('section:not(.hero)')
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.add('is-visible')
+          io.unobserve(e.target)
+        }
+      })
+    }, { rootMargin: '0px 0px -8% 0px' })
+    els.forEach((el) => {
+      // Anything already on screen at load stays visible — no flash
+      if (el.getBoundingClientRect().top < window.innerHeight) return
+      el.classList.add('reveal')
+      io.observe(el)
+    })
+    return () => io.disconnect()
+  }, [])
+
   const setLang = useCallback((l: Lang) => {
     setLangState(l)
     localStorage.setItem('hs-lang', l)
@@ -94,9 +112,7 @@ export default function Page() {
       <Nav t={t} lang={lang} setLang={setLang} openModal={openModal} onMenuOpen={() => setMenuOpen(true)} />
       <MobileMenu t={t} lang={lang} setLang={setLang} open={menuOpen} onClose={() => setMenuOpen(false)} openModal={openModal} />
       <Hero t={t} openModal={openModal} />
-      <Marquee t={t} />
       <StatStrip t={t} />
-      <TrustBar t={t} />
       <TermSection t={t} openModal={openModal} />
       <About t={t} openModal={openModal} openLightbox={openLightbox} />
       <Programs t={t} openModal={openModal} />
@@ -105,7 +121,6 @@ export default function Page() {
       <Coaches t={t} />
       <Testimonials t={t} />
       <Access t={t} openLightbox={openLightbox} />
-      <MidCta t={t} openModal={openModal} />
       <Faq t={t} faqOpen={faqOpen} setFaqOpen={setFaqOpen} />
       <FinalCta t={t} openModal={openModal} />
       <Footer t={t} openModal={openModal} />

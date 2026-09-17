@@ -7,7 +7,15 @@ const PROGRAMS: Record<string, string> = {
   individual: 'Individual (1-on-1)',
   '1on2': '1-on-2',
   'group-kids': 'Group Sessions (Saturdays)',
-  'term-kids': 'Term Program — Kids (Starting Jul 18)',
+  'term-kids': 'Term Program — Kids (Starting Oct 10)',
+}
+
+// Subject is written for both sides: replies from the inbox go to the enquirer with "Re: " + this subject
+const SUBJECT_TOPICS: Record<string, string> = {
+  individual: 'Individual Coaching Enquiry',
+  '1on2': '1-on-2 Coaching Enquiry',
+  'group-kids': 'Group Sessions Enquiry',
+  'term-kids': 'Term Program Enquiry',
 }
 
 const LEVELS: Record<string, string> = {
@@ -51,7 +59,7 @@ export async function POST(request: Request) {
     const html = `
 <table style="font-family:sans-serif;font-size:15px;color:#111827;max-width:560px;width:100%">
   <tr><td style="padding:24px 0 8px">
-    <h2 style="margin:0;color:#1B3A8C;font-size:22px">New Trial Booking Request</h2>
+    <h2 style="margin:0;color:#1B3A8C;font-size:22px">New enquiry from ${name}</h2>
   </td></tr>
   <tr><td style="border-top:2px solid #E8610A;padding-top:20px">
     <table style="width:100%;border-collapse:collapse">
@@ -69,11 +77,16 @@ export async function POST(request: Request) {
   </td></tr>
 </table>`
 
+    // Enquirer's name goes in the sender display name so it still shows in the inbox list.
+    // Strip characters that would break the From header.
+    const senderName = String(d.name ?? '').replace(/[",;:<>()\r\n\\]/g, '').trim().slice(0, 60)
+    const topic = SUBJECT_TOPICS[d.program] || 'Trial Session Enquiry'
+
     await resend.emails.send({
-      from: 'Happy Spin Bookings <bookings@happyspin.com.au>',
+      from: `${senderName} via Happy Spin <bookings@happyspin.com.au>`,
       to: 'happyspintt@gmail.com',
       replyTo: d.email,
-      subject: `New Trial Enquiry — ${name}`,
+      subject: `${topic} — Happy Spin Table Tennis`,
       html,
     })
 

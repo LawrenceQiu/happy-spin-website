@@ -2,38 +2,38 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Kids\' Group Sessions — Term 3 2026 | Happy Spin Table Tennis',
-  description: 'Join our 9-week kids\' group training term starting 18 July 2026. Small groups, multiball drills, match play, and dedicated coaching every Saturday in Forest Hill.',
+  title: 'Kids\' Group Sessions — Term 4 2026 | Happy Spin Table Tennis',
+  description: 'Join our 10-week kids\' group training term starting 10 October 2026. Small groups, multiball drills, match play, and dedicated coaching every Saturday in Forest Hill.',
 }
 
 const phases = [
   {
     num: '01',
     title: 'Warm-Up & Stretching',
-    desc: 'Every session starts with a dynamic warm-up to get the body ready and reduce injury risk.',
+    desc: 'Get the body moving and ready to train safely.',
   },
   {
     num: '02',
     title: 'Fundamentals Practice',
-    desc: 'Forehand to forehand, backhand to backhand, cross-court rallying — building consistency and stroke mechanics.',
+    desc: 'Practise core strokes and build rally consistency.',
   },
   {
     num: '03',
     title: 'Multiball Drills',
-    desc: 'Targeted repetition with multiball training — footwork patterns, transitions, and stroke development under pressure.',
+    desc: 'High-rep drills with the coach to sharpen movement and technique.',
   },
   {
     num: '04',
     title: 'Match Play & Games',
-    desc: 'Students rotate 1-on-1 with the coach for focused game practice. While waiting, players use spare tables to compete and help pick up balls — keeping everyone active.',
+    desc: 'Competitive games to apply skills and build real match experience.',
   },
 ]
 
 const details = [
-  { label: 'Starts', value: '18 July 2026' },
-  { label: 'Duration', value: '9 weeks' },
+  { label: 'Starts', value: '10 October 2026' },
+  { label: 'Duration', value: '10 weeks' },
   { label: 'Day', value: 'Every Saturday' },
-  { label: 'Time', value: 'TBA — based on group numbers' },
+  { label: 'Time', value: '3:30 – 5:00 PM' },
   { label: 'Group size', value: 'Max 4 students per coach' },
   { label: 'Level', value: 'All levels welcome' },
   { label: 'Location', value: '140 Mahoneys Rd, Forest Hill VIC' },
@@ -61,7 +61,7 @@ export default function GroupSessionsPage() {
             borderRadius: '50px', padding: '6px 18px', fontSize: '11px', fontWeight: 700,
             letterSpacing: '.1em', textTransform: 'uppercase', marginBottom: '20px',
           }}>
-            Term 3 · 2026
+            Term 4 · 2026
           </div>
           <h1 style={{
             fontFamily: 'var(--font-barlow-condensed), "Barlow Condensed", sans-serif',
@@ -74,7 +74,7 @@ export default function GroupSessionsPage() {
             Structured coaching in a small, fun group environment
           </p>
           <p style={{ fontSize: '15px', color: '#E8610A', fontWeight: 700, margin: '0 0 36px' }}>
-            Starting 18 July 2026 · 9 Weeks · Every Saturday
+            Starting 10 October 2026 · 10 Weeks · Saturdays 3:30–5:00 PM
           </p>
           <Link
             href="/?enquire=1"
@@ -188,7 +188,7 @@ export default function GroupSessionsPage() {
             How to Enrol
           </h2>
           <p style={{ fontSize: '16px', color: '#6B7280', lineHeight: 1.6, margin: '0 0 32px' }}>
-            Fill out our enquiry form and we&apos;ll get back to you within 24 hours to confirm your spot and session time. Spots are limited so get in early.
+            Fill out our enquiry form and we&apos;ll get back to you within 24 hours to confirm your spot. Spots are limited so get in early.
           </p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap', alignItems: 'center' }}>
             <Link

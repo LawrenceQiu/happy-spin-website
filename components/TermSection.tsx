@@ -8,9 +8,9 @@ interface TermSectionProps {
 }
 
 const MONTHS = [
-  { name: 'July', dates: [18, 25] },
-  { name: 'August', dates: [1, 8, 15, 22, 29] },
-  { name: 'September', dates: [5, 12] },
+  { name: 'October', dates: [10, 17, 24, 31] },
+  { name: 'November', dates: [7, 14, 21, 28] },
+  { name: 'December', dates: [5, 12] },
 ]
 
 const phases = [
@@ -37,10 +37,10 @@ const phases = [
 ]
 
 const programDetails = [
-  { label: 'Starts', value: '18 July 2026' },
-  { label: 'Duration', value: '9 weeks' },
+  { label: 'Starts', value: '10 October 2026' },
+  { label: 'Duration', value: '10 weeks' },
   { label: 'Day', value: 'Every Saturday' },
-  { label: 'Time', value: 'TBA — based on group numbers' },
+  { label: 'Time', value: '3:30 – 5:00 PM' },
   { label: 'Group size', value: 'Max 4 students per coach' },
   { label: 'Level', value: 'All levels welcome' },
   { label: 'Location', value: '140 Mahoneys Rd, Forest Hill VIC' },
@@ -83,27 +83,29 @@ export default function TermSection({ t, openModal }: TermSectionProps) {
             </div>
           </div>
 
-          <div className="term-cal">
-            <div className="term-cal-header">
-              <span className="term-cal-label">Term 3 · 2026</span>
-              <span className="term-cal-sat">Every Saturday</span>
-            </div>
-            <div className="term-cal-body">
-              {MONTHS.map(({ name, dates }, i) => (
-                <div key={name} className={`term-cal-month${i < MONTHS.length - 1 ? ' term-cal-month--divider' : ''}`}>
-                  <div className="term-cal-month-name">{name}</div>
-                  <div className="term-cal-dates">
-                    {dates.map((d) => (
-                      <div key={d} className="term-cal-date">
-                        <span className="term-cal-date-num">{d}</span>
-                        <span className="term-cal-date-day">Sat</span>
-                      </div>
-                    ))}
+          <div className="term-visual">
+            <div className="term-cal">
+              <div className="term-cal-header">
+                <span className="term-cal-label">Term 4 · 2026</span>
+                <span className="term-cal-sat">Saturdays · 3:30–5:00 PM</span>
+              </div>
+              <div className="term-cal-body">
+                {MONTHS.map(({ name, dates }, i) => (
+                  <div key={name} className={`term-cal-month${i < MONTHS.length - 1 ? ' term-cal-month--divider' : ''}`}>
+                    <div className="term-cal-month-name">{name}</div>
+                    <div className="term-cal-dates">
+                      {dates.map((d) => (
+                        <div key={d} className="term-cal-date">
+                          <span className="term-cal-date-num">{d}</span>
+                          <span className="term-cal-date-day">Sat</span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
+              <div className="term-cal-footer">10 sessions · 1.5 hrs each</div>
             </div>
-            <div className="term-cal-footer">9 sessions · 1.5 hrs each</div>
           </div>
 
         </div>
@@ -152,7 +154,7 @@ export default function TermSection({ t, openModal }: TermSectionProps) {
 
             {/* Enrol CTA */}
             <div className="term-expand-cta">
-              <p className="term-expand-cta-text">Limited spots — get in touch to secure your place for Term 3.</p>
+              <p className="term-expand-cta-text">Limited spots — get in touch to secure your place for Term 4.</p>
               <button onClick={openModal} className="term-cta">Enquire Now →</button>
             </div>
           </div>
